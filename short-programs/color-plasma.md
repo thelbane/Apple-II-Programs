@@ -1,5 +1,7 @@
 # Color Plasma
 
+![image](images/color-plasma.jpg "Color Plasma Screenshot")
+
 ## Program
 
 ```applesoft
