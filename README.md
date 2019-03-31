@@ -2,4 +2,4 @@
 A collection of short programs for the Apple II
 
 ## Usage
-Install your favorite Apple II emulator or better yet, use a real Apple II, 
+Install your favorite Apple II emulator or better yet, use a real Apple II.
