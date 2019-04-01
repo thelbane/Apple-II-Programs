@@ -14,5 +14,6 @@ Copy and paste these programs into your favorite Apple II emulator _or_ enter th
 * [Random Plasma](short-programs/random-plasma.md)
 * [Floyd-Steinberg Plasma](short-programs/floyd-steinberg-plasma.md)
 * [Color Plasma](short-programs/color-plasma.md)
+* [Hello](short-programs/hello.md)
 
 If you're feeling extra lazy, here's a [disk image](short-programs/short-programs.dsk) containing all of the above programs in a single, easy-to-use package.
