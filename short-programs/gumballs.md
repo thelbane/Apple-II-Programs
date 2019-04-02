@@ -1,6 +1,6 @@
 # Gumballs
 
-![image](images/gumballs.jpg "Gumballs Screenshot")
+![image](media/gumballs.jpg "Gumballs Screenshot")
 
 Just a bunch of colorful gumballs. Nom!
 
