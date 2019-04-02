@@ -1,5 +1,7 @@
 # Hello
 
+![image](media/hello.gif "Hello GIF")
+
 A two-line _HELLO_ program that turns a DOS 3.3 disk CATALOG into a menu! Crazy!
 
 ## Program
