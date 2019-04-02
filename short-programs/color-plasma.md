@@ -1,6 +1,6 @@
 # Color Plasma
 
-![image](images/color-plasma.jpg "Color Plasma Screenshot")
+![image](media/color-plasma.jpg "Color Plasma Screenshot")
 
 Whoa, this one has comments in the code! This is a 3-color version of the [Floyd-Steinberg Plasma](floyd-steinberg-plasma.md) one-liner. Instead of two sine waves interfering with each other, this one just scales a single wave which produces a nice perspective effect.
 
