@@ -1,6 +1,6 @@
 # City Scape
 
-![image](images/city-scape.jpg "City Scape Screenshot")
+![image](media/city-scape.jpg "City Scape Screenshot")
 
 Randomly generates a city skyline at dusk. Nice.
 
