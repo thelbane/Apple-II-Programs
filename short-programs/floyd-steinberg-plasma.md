@@ -1,6 +1,6 @@
 # Floyd-Steinberg Plasma
 
-![image](images/floyd-steinberg-plasma.jpg "Floyd-Steinberg Plasma")
+![image](media/floyd-steinberg-plasma.jpg "Floyd-Steinberg Plasma")
 
 Floyd-Steinberg dithering algorithm implemented in one line of Applesoft.
 
