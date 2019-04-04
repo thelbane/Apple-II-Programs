@@ -4,7 +4,7 @@
 
 Do ye dare seek the lost treasure? Arrrrrgh! Brave the high seas, scorching deserted islands, and countless other dangers!
 
-Commands: <E>ast, <W>est, <T>ake, <D>ig
+Commands: (E)ast, (W)est, (T)ake, (D)ig
 
 ## Program
 
