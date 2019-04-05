@@ -36,7 +36,7 @@ For example, let's say you're writing a program that uses the hi-res screen to d
 
 You can't use `GOTO 0` to loop the interesting part because it will clear the screen every time.
 
-`FOR` is the obvious choice for repeat work a certain number of times, but it might not be so obvious if you want to do work indefinitely.
+`FOR` is the obvious choice for repeating work a specific number of times, but it might not be so obvious if you want to do work indefinitely.
 
 `FOR N = 0 TO 1 : PRINT "."; : N = 0 : NEXT`
 
@@ -44,7 +44,7 @@ Or if you want to conditionally exit a loop on keypress.
 
 `FOR N = 0 TO 1 : PRINT "."; : N = PEEK(-16384) > 127 : NEXT : GET A$`
 
-What's happening above is instead of just resetting N to 0 every time like in the previous example, we're setting it to the result of the expression `PEEK(-16384) > 127` which incidentally returns 1 if a key is pressed and 0 if no key is pressed. (BTW, If we don't `GET A$`, it'll remain in the buffer until some inopportune time, such as at the next Applesoft prompt, where it'll just dump out and look ugly, forcing the user to arrow-key to the left.)
+What's happening above is instead of just resetting N to 0 every time like in the previous example, we're setting it to the result of the expression `PEEK(-16384) > 127` which incidentally returns 1 if a key is pressed and 0 if no key is pressed. (BTW, If we don't `GET A$`, the keypress will remain in the buffer until some inopportune time, such as at the next Applesoft prompt, where it'll just dump out and look ugly, forcing the user to arrow-key to the left.)
 
 ### User Input
 Patience.
