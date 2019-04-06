@@ -16,6 +16,7 @@ Copy and paste these programs into your favorite Apple II emulator _or_ enter th
 * [Color Plasma](short-programs/color-plasma.md)
 * [Hello](short-programs/hello.md)
 * [Desert Island](short-programs/desert-island.md)
+* [Typing Game](short-programs/typing-game.md)
 
 If you're feeling extra lazy, here's a [disk image](short-programs/short-programs.dsk) containing all of the above programs in a single, easy-to-use package.
 
