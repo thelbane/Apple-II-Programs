@@ -2,11 +2,9 @@
 ## Tips and Tricks
 
 ### Program Length
-Duh. But is it truly duh? Maybe not. Sure, we want to make Applesoft do interesting things in one or two lines of code, but how long can a line of code be? For a long time, I assumed it was 255 characters since that's how many characters you can enter at the Applesoft prompt before it starts beeping and ignores your input... 255 is also the max string length in Applesoft. However, you might be surprised that 230 is the maximum number of characters you can enter at the prompt.
+Duh. But is it truly duh? Perhaps not. We're trying to make Applesoft do interesting things in one or two lines of code, but how long can a single line of code be? When typing in a command or program line at the Applesoft prompt, you may have noticed it starts beeping at character 249 to warn you that you're approaching the max line length, and rejects the input when you go over 255 characters. You might be surprised to learn (just as I was) that Applesoft rejects all input after character 239. 
 
-| Tip |
-| --- |
-| You are limited to **230 characters per line**. |
+**TIP:** You are limited to **239 characters per line**.
 
 ### Line Numbers
 This one's super easy. Line number count toward your 230 character budget, so stick to single-digits. This should be easy since you're optimizing for just one or two lines.
@@ -21,9 +19,7 @@ Another easy one: Don't. With few exceptions, Applesoft is incredibly good at pa
 
 `0FORN=0TO1:?".";:N=PEEK(-16384)>128:NEXT:GETA$`
 
-| Tip |
-| --- |
-| **Don'tuseanyspaces** "Except in strings." |
+**TIP:**  **Don'tuseanyspaces** "Except in strings."
 
 ### Flow Control
 This is one of the trickier aspects of trying to do useful things in one or two lines of Applesoft. Your old friends `GOTO`, `GOSUB`, and `IF` are not welcome in this dojo (at least, not in most of the cases where you would normally use them).
