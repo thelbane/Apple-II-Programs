@@ -20,6 +20,7 @@ Another easy one: Don't. With few exceptions, Applesoft is incredibly good at pa
 ```
 
 **TIP:** **Don'tuseanyspaces** "Except in strings."
+
 **NOTE:** Throughout most of the examples below, I will _include_ space for clarity.
 
 ## Flow Control
@@ -66,9 +67,58 @@ Let's modify the previous example to stop when the user presses any key, instead
 FOR N = 0 TO 1 : PRINT N; : N = PEEK(-16384) > 127 : NEXT : POKE -16368,0
 ```
 
-What's happening above is instead of just resetting N to 0 every time like in the previous example, we're setting it to the result of the expression `PEEK(-16384) > 127` which incidentally returns 1 if a key is pressed and 0 if no key is pressed. BTW, If we don't `POKE -16368,0`, the keypress will remain in the buffer until some inopportune time, such as at the next Applesoft prompt, where it'll just dump out and look ugly, forcing the user to arrow-key to the left.
+What's going on here? Instead of just resetting N to 0 every time like in the previous example, we're setting it to the result of the expression `PEEK(-16384) > 127` which incidentally returns 1 if a key is pressed and 0 if no key is pressed. BTW, If we don't subsequently `POKE -16368,0`, the keypress will remain in the buffer until some inopportune time, such as at the next Applesoft prompt, where it'll just dump out and look ugly, forcing the user to arrow-key to the left. I'll cover interesting PEEKs and POKEs later.
 
-### 49152
+### Basic Optimization (aka "-16384 or 49152 or -4^7")
+
+Let's examine the last example again, except as a program starting with line 0.
+
+``` Applesoft
+0 FOR N = 0 TO 1 : PRINT N; : N = PEEK(-16384) > 127 : NEXT : POKE -16368,0
+```
+
+That's pretty short, but it contains a lot of unnecessary white space. Let's remove it.
+
+``` Applesoft
+0FORN=0TO1:PRINTN;:N=PEEK(-16384)>127:NEXT:POKE-16368,0
+```
+
+Better. But every Applesoft aficionado knows `PRINT` is just long-hand for `?`.
+
+``` Applesoft
+0FORN=0TO1:?N;:N=PEEK(-16384)>127:NEXT:POKE-16368,0
+```
+
+Also, negative POKEs and PEEKs have a positive representation. Just add 65536.
+
+``` Applesoft
+0FORN=0TO1:?N;:N=PEEK(49152)>127:NEXT:POKE49168,0
+```
+
+Can we do better? You betcha.
+
+``` Applesoft
+0FORN=0TO1:?N;:N=PEEK(-4^7)>127:NEXT:POKE49168,0
+```
+
+Every character counts!
+
+``` Applesoft
+0FORN=0TO1:?N;:N=PEEK(-4^7)>127:NEXT:GETA$
+```
+
+Since we only exit the loop when a key is pressed, we know that the `GET` will immediately consume that keypress and not pause the program.
+
+Let's look at the progression again.
+
+``` Applesoft
+0 FOR N = 0 TO 1 : PRINT N; : N = PEEK(-16384) > 127 : NEXT : POKE -16368,0
+0FORN=0TO1:PRINTN;:N=PEEK(-16384)>127:NEXT:POKE-16368,0
+0FORN=0TO1:?N;:N=PEEK(-16384)>127:NEXT:POKE-16368,0
+0FORN=0TO1:?N;:N=PEEK(49152)>127:NEXT:POKE49168,0
+0FORN=0TO1:?N;:N=PEEK(-4^7)>127:NEXT:POKE49168,0
+0FORN=0TO1:?N;:N=PEEK(-4^7)>127:NEXT:GETA$
+```
 
 | Peek/Poke | Function |
 | - | - |
