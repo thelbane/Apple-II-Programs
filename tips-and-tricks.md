@@ -1,5 +1,4 @@
-# One- and Two-Liners
-A sort of guide
+# One- and Two-Liners: Tips & Tricks
 
 ## The Basics
 
@@ -11,7 +10,7 @@ Duh. But is it truly duh? Perhaps not. We're trying to make Applesoft do interes
 ### Line Numbers
 This one's super easy. Line number count toward your 230 character budget, so stick to single-digits. This should be easy since you're optimizing for just one or two lines.
 
-**TIP:** Keep it simple, **start your program at line 0**. If you're writing a two-liner, impress your friends and **make the second line number 1**. |
+**TIP:** Keep it simple, **start your program at line 0**. If you're writing a two-liner, impress your friends and **make the second line number 1**.
 
 ### White Space
 Another easy one: Don't. With few exceptions, Applesoft is incredibly good at parsing code with no spaces.
@@ -20,7 +19,8 @@ Another easy one: Don't. With few exceptions, Applesoft is incredibly good at pa
 0FORN=0TO1:?".";:N=PEEK(-16384)>128:NEXT:GETA$
 ```
 
-**TIP:**  **Don'tuseanyspaces** "Except in strings."
+**TIP:** **Don'tuseanyspaces** "Except in strings."
+**NOTE:** Throughout most of the examples below, I will _include_ space for clarity.
 
 ## Flow Control
 Now let's jump into some of the tricky tricks. Your old friends `GOTO`, `GOSUB`, and `IF` are not welcome in this dojo... at least, not in most of the cases where you would typically use them. This is not to say that you should never use them, but that you'll be _less likely_ to use them for your one- and two-liners.
