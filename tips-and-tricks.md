@@ -107,7 +107,7 @@ Every character counts!
 0FORN=0TO1:?N;:N=PEEK(-4^7)>127:NEXT:GETA$
 ```
 
-Since we only exit the loop when a key is pressed, we know that the `GET` will immediately consume that keypress and not pause the program.
+Since we only exit the loop when a key is pressed, we know that the `GET` will immediately consume that keypress and not pause the program. We've gone from 70 characters to 42 characters!
 
 Let's look at the progression again.
 
@@ -119,6 +119,34 @@ Let's look at the progression again.
 0FORN=0TO1:?N;:N=PEEK(-4^7)>127:NEXT:POKE49168,0
 0FORN=0TO1:?N;:N=PEEK(-4^7)>127:NEXT:GETA$
 ```
+
+If you've been running each step in our optimization, you may have noticed that computing`-4^7` is a bit slower than the previous iterations. It saves a character, but at the expense of speed. This is a trade-off that I usually don't make unless I absolutely need that one extra character, but this section is about optimizing the number of characters.
+
+Can we make it shorter? I'm not sure, but let's try some stuff...
+
+### More Optimization
+
+Our infinite looping `FOR-NEXT` construct is serving us well, but it's worth noting that counting from 0 to 1 is fairly arbitrary. In our case, the first factor could be any number less than one, such as 0 or -10 or -1000.
+
+``` Applesoft
+0FORN=-1000TO1:?N;:N=PEEK(-4^7)>127:NEXT:GETA$
+```
+
+This really doesn't do anything for us, but it illustrates an important aspect of optimization: Thinking creatively and keeping an open mind. What happens if we change the second factor to 2?
+
+``` Applesoft
+0FORN=0TO2:?N;:N=PEEK(-4^7)>127:NEXT:GETA$
+```
+
+Uh oh. Our program is broken. Pressing a key no longer ends it. :( Why? Because we changed the exit criteria. The second factor determines whether the `NEXT` loops or continues to the next statement. Remember, `NEXT` increments and _then_ tests. We're setting `N` to 0 or 1, so the subsequent `NEXT` will increment it to 1 or 2. It will never be greater than 2, which is the second factor in our `FOR` statement, therefore the loop will never end.
+
+Even though we broke our program, this is interesting. 
+
+``` Applesoft
+0FORN=0TO127:?N;:N=PEEK(-4^7):NEXT:GETA$
+```
+
+Instead of testing if the keypress strobe `PEEK(-4^7)` is greater than 127, why not let `NEXT` do the test for us? Note the program now repeatedly outputs the result of the PEEK until a key is pressed, which sets `N` to the ASCII code of the pressed key _plus 128_, which causes the `NEXT` to continue. This program started at 75 characters and we managed to shave off a whopping 35 characters! The final program is 40 characters. Can you make it even shorter?
 
 | Peek/Poke | Function |
 | - | - |
