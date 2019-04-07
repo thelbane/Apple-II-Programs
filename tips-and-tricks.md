@@ -153,9 +153,3 @@ Instead of testing if the keypress strobe `PEEK(-4^7)` is greater than 127, why 
 | X = PEEK(49152) | Strobes the keyboard |
 | POKE 49168,0 | Clears the keyboard strobe |
 | X = PEEK(49200) | Clicks the speaker |
-
-### User Input
-Patience.
-
-### Strings
-Patience.
