@@ -18,6 +18,7 @@ Copy and paste these programs into your favorite Apple II emulator _or_ enter th
 * [Desert Island](short-programs/desert-island.md)
 * [Typing Game](short-programs/typing-game.md)
 * [Sprite](short-programs/sprite.md)
+* [Tessellator](short-programs/tessellator.md)
 
 ## Disk Image
 This [disk image](short-programs/short-programs.dsk) contains all of the above programs in a single, easy-to-use package.
