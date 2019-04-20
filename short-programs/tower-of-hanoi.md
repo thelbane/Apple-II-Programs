@@ -1,6 +1,6 @@
 # Tower of Hanoi
 
-![image](media/tower-of-hanoi.png "Tower of Hanoi Screenshot")
+![image](media/tower-of-hanoi.gif "Tower of Hanoi GIF")
 
 Yikes. Don't even ask me how I crammed this game into two lines. Modify the initial value of `H` to change the height of the tower.
 
@@ -9,3 +9,7 @@ Yikes. Don't even ask me how I crammed this game into two lines. Modify the init
 `0H=8:DIMT(3,H):HGR:HOME:D=1:FORY=0TOH-1:T(X,Y)=H-Y:H(X)=Y+1:GOSUB1:NEXT:FORD=0TO1:FORQ=0TO1:GETA$:X=ASC(A$)-1:X=X-INT(X/3)*3:Q=H(X)>-DANDT*D<=V(X):NEXT:T(X+(1-D)*(3-X),H(X))=T:H(X)=H(X)+D:GOSUB1:H(X)=H(X)-1+D:D=D-(D=1)*2*(H(2)<H):NEXT:END`
 
 `1Y=H(X)-1:T=T(X,Y):C=T-INT(T/5)*5+1:C=C+(C>3):HCOLOR=C*D:A=X*(134-H*4)+H*4:Z=T(X,Y)*4:FORB=0TO4:HPLOTA-Z,156-Y*6-BTOA+Z,156-Y*6-B:NEXT:HCOLOR=3:HPLOT0,158TO279,158:VTAB21:FORI=0TO2:?"   "I+1,:Z=H(I)-1:V(I)=T(I,Z+(Z<0))+(Z<0)*9:NEXT:RETURN`
+
+## Discussion
+
+[Apple II Enthusiasts Group Permalink](https://www.facebook.com/groups/5251478676/permalink/10158489147328677/)
