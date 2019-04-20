@@ -19,6 +19,3 @@ Try inputting: 40,1,0
 ## Discussion
 
 [Apple II Enthusiasts Group Permalink](https://www.facebook.com/groups/5251478676/permalink/10158481850618677/)
-
-
-
