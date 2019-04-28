@@ -1,14 +1,14 @@
 # Hello
 
-![image](media/hello.gif "Hello GIF")
+![image](media/hello.png "Hello Screenshot")
 
 A two-line _HELLO_ program that turns a DOS 3.3 disk CATALOG into a menu! Crazy!
 
 ## Program
 
-`0HOME:F=1024:D$=CHR$(4):?D$"CATALOG":FORY=5TO24:VTABY:HTAB4:?"["CHR$(60+Y)"]":Y=Y+(PEEK(F+1+(INT(Y/8)*40)+(Y/8-INT(Y/8))*F)=160)*25:NEXT:?:?"RUN [A-"CHR$(34+Y)"]:";:FORN=0TO1:GETA$:N=A$>="A"ANDA$<CHR$(35+Y):NEXT`
+`0TEXT:HOME:GOSUB1:X=3:FORY=0TO23:GOSUB1:R=Y+1:Y=Y+23*(A>47ANDA<58):NEXT:FORY=RTO23:GOSUB1:VTABY:?"["CHR$(65-R+Y)"]":Y=Y+23*(A=32):NEXT:FORN=0TO1:GETA$:A=ASC(A$):N=A>64ANDA<42-R+Y:NEXT:X=7:Y=A-56-R:Z=29:GOSUB1:?A$:NORMAL:VTAB24:?D$"RUN"A$`
 
-`1?A$:Y=ASC(A$)-61:M=F+(INT(Y/8)*40)+(Y/8-INT(Y/8))*F:VTABY+1:HTAB8:FORX=7TO36:C$=CHR$(PEEK(M+X)-128):POKE50,63+192*(C$=" "):?C$;:F$=F$+C$:NEXT:VTAB22:?:?D$CHR$(32+(PEEK(M+1)=194)*34)"RUN "F$`
+`1POKE44452,99:D$=CHR$(4):VTAB1:?MID$(D$+"CATALOG",1,8-C*8):C=1:A$="":M=1024+X+(INT(Y/8)*40)+(Y/8-INT(Y/8))*1024:FORB=MTOM+Z-1:A=PEEK(B)-128:A$=A$+CHR$(A):NEXT:POKE50,255-192*(X=7):VTABY+1:HTABX+1:RETURN`
 
 ## Discussion
 
