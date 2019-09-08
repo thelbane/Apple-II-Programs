@@ -6,6 +6,10 @@
   * [Line Numbers](#line-numbers)
   * [White Space](#white-space)
 * [Flow Control](#flow-control)
+  * [The (New) Power of FOR-NEXT](#the-new-power-of-for-next)
+  * [User Input](#user-input)
+* [More Optimizations](#more-optimizations) 
+  * [Creative Refactoring](#creative-refactoring)
 
 ## Introduction
 There are a couple of obsolete categories of programs that I find intriguing, called "one-liners" and "two-liners." These are programs that are written using only one or two lines of code which, ideally, do something _interesting_. Nibble Magazine, popular in the 80's for its lengthy printouts of Applesoft and machine language programs that readers could manually type in, gave me my first glimpse into the world of one- and two-liners. It held a contest where programmers could submit their miniature programs, and the editors would publish the winning programs every month. 
@@ -83,7 +87,7 @@ FOR N = 0 TO 1 : PRINT N; : N = PEEK(-16384) > 127 : NEXT : POKE -16368,0
 
 What's going on here? Instead of just resetting N to 0 every time like in the previous example, we're setting it to the result of the expression `PEEK(-16384) > 127` which incidentally returns 1 if a key is pressed and 0 if no key is pressed. BTW, If we don't subsequently `POKE -16368,0`, the keypress will remain in the buffer until some inopportune time, such as at the next Applesoft prompt, where it'll just dump out and look ugly, forcing the user to arrow-key to the left. I'll cover interesting PEEKs and POKEs later.
 
-### Basic Optimization (aka "-16384 or 49152 or -4^7")
+## More Optimizations
 
 Let's examine the last example again, except as a program starting with line 0.
 
@@ -138,7 +142,7 @@ If you've been running each step in our optimization, you may have noticed that 
 
 Can we make it shorter? I'm not sure, but let's try some stuff...
 
-### More Optimization
+### Creative Refactoring
 
 Our infinite looping `FOR-NEXT` construct is serving us well, but it's worth noting that counting from 0 to 1 is fairly arbitrary. In our case, the first factor could be any number less than one, such as 0 or -10 or -1000.
 
