@@ -10,6 +10,7 @@
   * [User Input](#user-input)
 * [More Optimizations](#more-optimizations) 
   * [Creative Refactoring](#creative-refactoring)
+* [Peeks & Pokes](#peeks-and-pokes)
 
 ## Introduction
 There are a couple of obsolete categories of programs that I find intriguing, called "one-liners" and "two-liners." These are programs that are written using only one or two lines of code which, ideally, do something _interesting_. Nibble Magazine, popular in the 80's for its lengthy printouts of Applesoft and machine language programs that readers could manually type in, gave me my first glimpse into the world of one- and two-liners. It held a contest where programmers could submit their miniature programs, and the editors would publish the winning programs every month. 
@@ -165,6 +166,10 @@ Even though we broke our program, this is interesting.
 ```
 
 Instead of testing if the keypress strobe `PEEK(-4^7)` is greater than 127, why not let `NEXT` do the test for us? Note the program now repeatedly outputs the result of the PEEK until a key is pressed, which sets `N` to the ASCII code of the pressed key _plus 128_, which causes the `NEXT` to continue. This program started at 75 characters and we managed to shave off a whopping 35 characters! The final program is 40 characters. Can you make it even shorter?
+
+## Peeks and Pokes
+
+Pardon the dust. This section is incomplete. 
 
 | Peek/Poke | Function |
 | - | - |
