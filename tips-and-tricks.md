@@ -1,4 +1,4 @@
-# One- and Two-Liners: Tips & Tricks
+# Apple II One- and Two-Liners: Tips & Tricks
 
 * [Introduction](#introduction)
 * [The Basics](#the-basics)
@@ -8,22 +8,26 @@
 * [Flow Control](#flow-control)
 
 ## Introduction
-Lorem ipsum dolor sit amet
+There are a couple of obsolete categories of programs that I find intriguing, called "one-liners" and "two-liners." These are programs that are written using only one or two lines of code which, ideally, do something _interesting_. Nibble Magazine, popular in the 80's for its lengthy printouts of Applesoft and machine language programs that readers could manually type in, gave me my first glimpse into the world of one- and two-liners. It held a contest where programmers could submit their miniature programs, and the editors would publish the winning programs every month. 
+
+Since the only limitation was that these programs fit into one or two lines of code, the variety of topics that they covered was broad. Some programs did "useful" things like calculate gas mileage, while others bounced a ball around the screen. Still others did amazing things like fill the display with three-dimensional imagery or play music... all in one or two lines of code!
+
+While my adolescent mind was blown on a monthly basis by these contest winners, I was also learning a great deal about algorithms and code optimization by picking apart these programs to understand how programmers accomplished these feats. Some of those learnings I still carry with me today. While the tips and tricks below are very specific to Applesoft, there is probably some broader lesson to be learned about joy and programming. I'll let you figure that part out for yourself. :)
 
 ## The Basics
 
 ### Program Length
-Duh. But is it truly duh? Perhaps not. We're trying to make Applesoft do interesting things in one or two lines of code, but how long can a single line of code be? When typing in a series of commands or a program line at the Applesoft prompt, you may have noticed it starts beeping at character 249 to warn you that you're approaching the max line length, and rejects the input when you go over 255 characters. You might be surprised to learn (just as I was) that Applesoft rejects all input after character 239. 
+We're trying to make Applesoft do interesting things in one or two lines of code, but how long can a single line of code be? When typing in a really long line at the Applesoft prompt, you may have noticed that the computer starts beeping at character 249. This is the system warning you that you're approaching the max line length, and that your input will be rejected when you go over 255 characters. What's really interesting, and what I was recently surprised to learn was that Applesoft actually rejects all input after 239 characters. 
 
 **TIP:** You are limited to **239 characters per line**. One nice thing about this number is that it comes out to exactly 6 full rows of 40-column text (including the "]" prompt). If you go over 6 rows, you'll know you've gone over budget.
 
 ### Line Numbers
-This one's super easy. Line number count toward your 230 character budget, so stick to single-digits. This should be easy since you're optimizing for just one or two lines.
+This one's super easy. Line numbers count toward your 239-character budget, so stick to single-digits. This should be easy since you're optimizing for just one or two lines.
 
 **TIP:** Keep it simple, **start your program at line 0**. If you're writing a two-liner, impress your friends and **make the second line number 1**.
 
 ### White Space
-Another easy one: Don't. With few exceptions, Applesoft is incredibly good at parsing code with no spaces.
+Another easy one: Don't use whitespace. With few exceptions, Applesoft is really good at parsing code with no spaces.
 
 ```Applesoft
 0FORN=0TO1:?".";:N=PEEK(-16384)>128:NEXT:GETA$
@@ -31,7 +35,7 @@ Another easy one: Don't. With few exceptions, Applesoft is incredibly good at pa
 
 **TIP:** **Don'tuseanyspaces** "Except in strings."
 
-**NOTE:** Throughout most of the examples below, I will _include_ space for clarity.
+**NOTE:** I may _include_ spaces for clarity in some of the examples below.
 
 ## Flow Control
 Now let's jump into some of the tricky tricks. Your old friends `GOTO`, `GOSUB`, and `IF` are not welcome in this dojo... at least, not in most of the cases where you would typically use them. This is not to say that you should never use them, but that you'll be _less likely_ to use them for your one- and two-liners.
