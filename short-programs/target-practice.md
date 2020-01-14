@@ -55,3 +55,7 @@ Thanks [Ted Thompson](https://www.facebook.com/Beech.Bum) for taking the time to
 490 NEXT: REM END OF THE ROUNDS LOOP
 500 PRINT "SCORE:";INT(S): REM DISPLAY THE FINAL SCORE
 ```
+
+## Discussion
+
+[Apple II Enthusiasts Group Permalink](https://www.facebook.com/groups/5251478676/permalink/10159354264563677/)
