@@ -11,7 +11,7 @@ Target Practice is a solitaire version of the classic artillery game. Hit the re
 `1INPUT"ANG,PWR:";A,V:R=A*-.0175:C=COS(R)*V:D=SIN(R)*V:X=0:Y=0:FORT=0TO10STEP0.1:HPLOTX,Y:X=41+INT(C*T/2-T*T)*2:Y=E+D*T+9.8*T*T:I=X/2*(X>0ANDX<280):T=T+((Y>Y(I))+(X<0)+(X>279)+(Y<0))*15:NEXT:Q=INT(X/16)=U:NEXT:S=S+P:NEXT:?"SCORE:"INT(S)`
 
 ### Human Readable
-Thanks [Ted Thompson](https://www.facebook.com/Beech.Bum) for taking the time to reformat the listing. For fun, and to help anyone trying to decipher my code, I decided to attempt to describe what each line does here:
+Thanks [Ted Thompson](https://github.com/TedThompson) for taking the time to reformat the listing. For fun, and to help anyone trying to decipher my code, I decided to attempt to describe what each line does here:
 
 ```Applesoft
 100 DIM Y(140): REM INITIALIZE THE ARRAY CONTAINING THE Y-COORDINATES OF THE GROUND
