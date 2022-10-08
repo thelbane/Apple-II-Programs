@@ -2,7 +2,7 @@
 
 ## Program
 
-`0A$(1)="FIZZ":A$(2)="BUZZ":A$(3)="FIZZBUZZ":FORN=1TO100:A$(0)=STR$(N):PRINTA$((N/3=INT(N/3))+(N/5=INT(N/5))*2):NEXT`
+`0FORN=1TO100:D=N/3=INT(N/3):Y=N/5=INT(N/5):?MID$("FIZZBUZZ"+STR$(N),9-((DORY)+D)*4,4+(DANDY)*4):NEXT`
 
 ## Discussion
 
