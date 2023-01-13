@@ -1,7 +1,7 @@
 # Apple II Programs
 
 ## Game Boy Tetris for Apple II
-I recently released an Apple II port of the Game Boy version of Tetris, however it is not hosted on GitHub. Do download playable disk images and source code, [please follow this link](https://www.mediafire.com/file/idnz38jba6kgsof/Game_Boy_Tetris_for_Apple_II_%2528src_incl%2529.zip/file).
+I recently released an Apple II port of the Game Boy version of Tetris, however it is not hosted on GitHub. To download the playable disk image and source code, [please follow this link](https://www.mediafire.com/file/idnz38jba6kgsof/Game_Boy_Tetris_for_Apple_II_%2528src_incl%2529.zip/file).
 
 ## Short Programs
 This is a collection of [short programs](short-programs) I've written for the Apple II. Most of them are one- or two-liners, written just for fun and shared to the [Apple II Enthusiasts Facebook group](https://www.facebook.com/groups/5251478676/).
