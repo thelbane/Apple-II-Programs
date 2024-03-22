@@ -4,6 +4,14 @@
 
 Yikes. Don't even ask me how I crammed this game into two lines. Modify the initial value of `H` to change the height of the tower.
 
+The goal of this game is to move the stack of discs from the left side of the board (column 1) to the right side (column 3) in as few moves as possible. There are three rules though:
+
+1. You may only move one disc at a time.
+2. You may only take the topmost disc from any tower and place it on top of any other tower.
+3. You may only place a smaller disc on top of a larger disc.
+
+To move a disc, type 1, 2, or 3 on your keyboard to remove the topmost disc from the corresponding tower. Then type 1, 2, or 3 to place the disc onto a different tower, or back onto the tower from which it was removed. The game will prevent you from placing larger discs on top of smaller discs.
+
 ## Program
 
 `0H=8:DIMT(3,H):HGR:HOME:D=1:FORY=0TOH-1:T(X,Y)=H-Y:H(X)=Y+1:GOSUB1:NEXT:FORD=0TO1:FORQ=0TO1:GETA$:X=ASC(A$)-1:X=X-INT(X/3)*3:Q=H(X)>-DANDT*D<=V(X):NEXT:T(X+(1-D)*(3-X),H(X))=T:H(X)=H(X)+D:GOSUB1:H(X)=H(X)-1+D:D=D-(D=1)*2*(H(2)<H):NEXT:END`
