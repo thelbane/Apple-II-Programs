@@ -4,7 +4,13 @@
 
 Do ye dare seek the lost treasure? Arrrrrgh! Brave the high seas, scorching deserted islands, and countless other dangers!
 
-Commands: (E)ast, (W)est, (T)ake, (D)ig
+Commands: 
+* "E" - Move east
+* "W" - Move west
+* "T" - Take the item in the current location
+* "D" - Dig
+
+Try to find the treasure in as few moves as possible!
 
 ## Program
 
