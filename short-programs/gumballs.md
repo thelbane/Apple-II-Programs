@@ -2,7 +2,7 @@
 
 ![image](media/gumballs.jpg "Gumballs Screenshot")
 
-Just a bunch of colorful gumballs. Nom!
+Just a bunch of colorful gumballs. Don't try to chew more than 8 or 9 of these babies at the same time.
 
 ## Program
 
