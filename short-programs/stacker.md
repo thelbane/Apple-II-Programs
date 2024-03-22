@@ -4,6 +4,8 @@
 
 A two-line game inspired by the [Stacker arcade game](https://en.wikipedia.org/wiki/Stacker_(game)). To play, wait for the row that's moving back and forth to line up directly above the row below it and press any key to move on to the next row. Win the game by reaching the top of the screen with at least one block left.
 
+_editor's note:_ This game is insanely difficult and it was sheer dumb luck that during the production of the preview animation above, Lee actually beat it. He has not since nor ever will achieve this feat ever again.
+
 ## Program
 
 `0W=20:A$="********************":P=-16384:HOME:L=2:R=39:X=4:FORY=24TO1STEP-1:SPEED=245:P$=MID$(A$,1,W):VTABY:FORZ=0TO1:FORX=XTO37-W:HTABX:?" ";:?P$;:IFPEEK(P)<128THENNEXT:FORX=37-WTO4STEP-1:HTABX:?P$;:?" ";:IFPEEK(P)<128THENNEXT:Z=0:NEXT`
