@@ -14,4 +14,4 @@ Press the spacebar to activate hyperjets and jump over the obstacles. This game 
 
 [Apple II Enthusiasts Group Permalink](https://www.facebook.com/groups/5251478676/permalink/10156679023638677/)
 
-<sub><sup>*</sup>Clicks. It clicks Apple II speaker. It sounds nothing like a real car. It's all lies.</sub>
+<sub><sup>*</sup>Clicks. It clicks the Apple II speaker. It sounds nothing like a real car. It's all lies.</sub>
