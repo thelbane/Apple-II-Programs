@@ -29,6 +29,7 @@ Copy and paste these programs into your favorite Apple II emulator _or_ enter th
 * [Tower of Hanoi](short-programs/tower-of-hanoi.md)
 * [Geometric](short-programs/geometric.md)
 * [Target Practice](short-programs/target-practice.md)
+* [Identity Crisis](short-programs/identity-crisis.md)
 * [Sierpinski Triangle](short-programs/sierpinski.md)
 * [Concentration](short-programs/concentration.md)
 
