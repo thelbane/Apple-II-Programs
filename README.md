@@ -32,6 +32,7 @@ Copy and paste these programs into your favorite Apple II emulator _or_ enter th
 * [Identity Crisis](short-programs/identity-crisis.md)
 * [Sierpinski Triangle](short-programs/sierpinski.md)
 * [Concentration](short-programs/concentration.md)
+* [Fifteen Puzzle](short-programs/fifteen-puzzle.md)
 
 ### Disk Image
 This [disk image](short-programs/short-programs.dsk) contains all of the above programs in a single, easy-to-use package.
