@@ -2,14 +2,15 @@
 
 ## One-Liners
 
-| test | test |
-| --- | --- |
-| [Snake Game](short-programs/snake-game.md)<br>![Snake Game](short-programs/media/snake-game-tn.png) | Don't run into your own tail! |
-| [Snake Game<br>![Snake Game](short-programs/media/snake-game-tn.png)](short-programs/snake-game.md) | Don't run into your own tail! |
-
-[![Snake Game](short-programs/media/snake-game-tn.png) Snake Game](short-programs/snake-game.md)
+| Project Link | Thumbnail | Description |
+| --- | --- | --- |
+| [Snake Game](short-programs/snake-game.md) | ![Snake Game](short-programs/media/snake-game-tn.png) | Don't run into your own tail! |
 
 ## Two-Liners
+
+| Project Link | Thumbnail | Description |
+| --- | --- | --- |
+| [Gumballs](short-programs/gumballs.md) | ![Gumballs](short-programs/media/gumballs-tn.png) | Don't run into your own tail! |
 
 ## Three-or-More-Liners
 
