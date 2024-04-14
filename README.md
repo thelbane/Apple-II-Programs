@@ -1,14 +1,27 @@
-# Apple II Programs
+# Short Programs For Your Apple II
 
-## Game Boy Tetris for Apple II
+## One-Liners
+
+| [Snake Game](short-programs/snake-game.md)<br>![Snake Game](short-programs/media/snake-game-tn.png) | Don't run into your own tail! |
+| [Snake Game<br>![Snake Game](short-programs/media/snake-game-tn.png)](short-programs/snake-game.md) | Don't run into your own tail! |
+
+[![Snake Game](short-programs/media/snake-game-tn.png) Snake Game](short-programs/snake-game.md)
+
+## Two-Liners
+
+## Three-or-More-Liners
+
+## Other Fun Projects
+
+# Game Boy Tetris for Apple II
 I recently released an Apple II port of the Game Boy version of Tetris, however it is not hosted on GitHub. To download the playable disk image and source code, [please follow this link](https://www.mediafire.com/file/idnz38jba6kgsof/Game_Boy_Tetris_for_Apple_II_%2528src_incl%2529.zip/file).
 
 ![Game Boy Tetris for Apple II](misc/gbt-ad-sm.png)
 
-## Short Programs
+# Short Programs
 This is a collection of [short programs](short-programs) I've written for the Apple II. Most of them are one- or two-liners, written just for fun and shared to the [Apple II Enthusiasts Facebook group](https://www.facebook.com/groups/5251478676/).
 
-### Usage
+## Usage
 Copy and paste these programs into your favorite Apple II emulator _or_ enter them into your actual Apple II and type `RUN`. Then sit back and watch the magic happen... slowly... because Applesoft is slow.
 
 * [Snake Game](short-programs/snake-game.md)
@@ -34,11 +47,11 @@ Copy and paste these programs into your favorite Apple II emulator _or_ enter th
 * [Concentration](short-programs/concentration.md)
 * [Fifteen Puzzle](short-programs/fifteen-puzzle.md)
 
-### Disk Image
+## Disk Image
 This [disk image](short-programs/short-programs.dsk) contains all of the above programs in a single, easy-to-use package.
 
-### Tips & Tricks
+## Tips & Tricks
 If you're interested in writing your own one- and two-liners, I've compiled some [tips & tricks](tips-and-tricks.md) that you might find helpful. 
 
-### Community
+## Community
 Thank you for being one of the like fourteen people who really digs this retro stuff (aka The vibrant Apple II community). If you have any problems with the programs in this repo, please let me know by opening an issue. I'm also aware that my one- and two-liners are very hacky and difficult to parse out. If there's a particular program you'd like to understand better, but you've hit a roadblock, let me know (in an issue) and I'll try to make time to add detailed dev notes. Cheers!
