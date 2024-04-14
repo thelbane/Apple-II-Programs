@@ -2,6 +2,8 @@
 
 ## One-Liners
 
+| test | test |
+| --- | --- |
 | [Snake Game](short-programs/snake-game.md)<br>![Snake Game](short-programs/media/snake-game-tn.png) | Don't run into your own tail! |
 | [Snake Game<br>![Snake Game](short-programs/media/snake-game-tn.png)](short-programs/snake-game.md) | Don't run into your own tail! |
 
