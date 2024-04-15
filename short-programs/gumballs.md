@@ -1,5 +1,7 @@
 # Gumballs
 
+![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/gumballs.jpg "Gumballs Screenshot")
 
 Just a bunch of colorful gumballs. Don't try to chew more than 8 or 9 of these babies at the same time.

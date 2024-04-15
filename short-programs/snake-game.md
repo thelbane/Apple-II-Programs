@@ -1,5 +1,7 @@
 # Snake Game
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/snake-game.gif "Snake Game GIF")
 
 It's actually more of a "light cycle game" than a "snake game" because your tail just keeps growing infinitely long without having to eat anything. Use the left and right arrow keys to turn.

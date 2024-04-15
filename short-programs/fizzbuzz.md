@@ -1,5 +1,7 @@
 # FizzBuzz
 
+![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 Applesoft implementation of [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz#:~:text=Fizz%20buzz%20is%20a%20group,with%20the%20word%20%22fizzbuzz%22.).
 
 It's super clever and completely unreadable. So... _did I get the job?_

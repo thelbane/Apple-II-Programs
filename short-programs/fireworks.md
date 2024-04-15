@@ -1,5 +1,7 @@
 # Fireworks
 
+![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/fireworks.gif "Fireworks GIF")
 
 Boom. Now every day can be Independence Day.

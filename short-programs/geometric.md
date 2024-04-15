@@ -1,5 +1,7 @@
 # Geometric
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/geometric.png "Geometric Screenshot")
 
 A geometric pattern to brighten anyone's day.

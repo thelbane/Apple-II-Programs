@@ -1,5 +1,7 @@
 # Tower of Hanoi
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/tower-of-hanoi.gif "Tower of Hanoi GIF")
 
 Yikes. Don't even ask me how I crammed this game into two lines. Modify the initial value of `H` to change the height of the tower.

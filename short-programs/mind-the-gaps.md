@@ -1,5 +1,7 @@
 # Mind The Gaps
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) ![notable](https://img.shields.io/badge/notable-gold)
+
 ![image](media/mind-the-gaps.gif "Mind The Gaps Screenshot")
 
 ## First Place - 2020 Two-Liner Contest

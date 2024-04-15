@@ -1,5 +1,7 @@
 # Typing Game
 
+![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/typing-game.gif "Typing Game GIF")
 
 Type each letter before it collides with the prompt! Make sure `Caps Lock` is enabled before playing.

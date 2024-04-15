@@ -1,5 +1,7 @@
 # Random Plasma
 
+![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red)
+
 ![image](media/random-plasma.png "Random Plasma Screenshot")
 
 Lee Fastenau</br>

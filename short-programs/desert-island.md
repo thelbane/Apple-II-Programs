@@ -1,5 +1,7 @@
 # Desert Island
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/desert-island.png "Desert Island Image")
 
 Do ye dare seek the lost treasure? Arrrrrgh! Brave the high seas, scorching deserted islands, and countless other dangers!

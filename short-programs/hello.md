@@ -1,5 +1,7 @@
 # Hello
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/hello.png "Hello Screenshot")
 
 A two-line _HELLO_ program that turns a DOS 3.3 disk CATALOG into a menu! Crazy!

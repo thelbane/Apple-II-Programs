@@ -1,5 +1,7 @@
 # Target Practice
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/target-practice.png "Target Practice Screenshot")
 
 Target Practice is a solitaire version of the classic artillery game. Hit the red target ten times using as few shots as possible. The angle (ANG) is the elevation of the shot in degrees, and power (PWR) is the speed of the shot in meters per second. There is a constant slight (1 m/s) head wind that you'll have to contend with as well.

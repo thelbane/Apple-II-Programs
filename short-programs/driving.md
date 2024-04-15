@@ -1,10 +1,12 @@
 # Driving
 
+![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/driving.gif "Driving GIF")
 
 Buckle up! It's gonna be a bumpy ride!
 
-Press the spacebar to activate hyperjets and jump over the obstacles. This game features high-quality 5.1 Dolby Surround Sound<sup>*</sup> that will make your neighbors call the cops.
+Press the spacebar to activate hyperjets and jump over the obstacles. This game features high-quality 5.1 Dolby Surround Sound[^1] that will make your neighbors call the cops.
 
 ## Program
 
@@ -14,4 +16,6 @@ Press the spacebar to activate hyperjets and jump over the obstacles. This game 
 
 [Apple II Enthusiasts Group Permalink](https://www.facebook.com/groups/5251478676/permalink/10156679023638677/)
 
-<sub><sup>*</sup>Clicks. It clicks the Apple II speaker. It sounds nothing like a real car. It's all lies.</sub>
+---
+
+[^1]: Clicks. It clicks the Apple II speaker. It sounds nothing like a real car. It's all lies.

@@ -1,5 +1,7 @@
 # Stacker
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/stacker.gif "Stacker Gameplay GIF")
 
 A two-line game inspired by the [Stacker arcade game](https://en.wikipedia.org/wiki/Stacker_(game)). To play, wait for the row that's moving back and forth to line up directly above the row below it and press any key to move on to the next row. Win the game by reaching the top of the screen with at least one block left.

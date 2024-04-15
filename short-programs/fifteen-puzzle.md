@@ -1,5 +1,7 @@
 # Fifteen Puzzle
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/fifteen-puzzle.gif "Fifteen Puzzle Screenshot")
 
 Controls are I, J, K, and L (all CAPS) to slide tiles up, left, down, and right, respectively. To win, move all the tiles into ascending numerical order leaving the empty tile in the bottom-rightmost position.

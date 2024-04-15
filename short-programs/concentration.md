@@ -1,5 +1,7 @@
 # Concentration
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/concentration.png "Concentration Screenshot")
 
 Concentration challenges your squishy human brain to remember where you last saw some single-digit numbers. Type a letter to reveal the number underneath. Find ten pairs of matching numbers to win the respect of your peers.

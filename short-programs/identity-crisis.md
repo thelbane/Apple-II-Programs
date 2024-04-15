@@ -1,5 +1,7 @@
 # Identity Crisis
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/identity-crisis.png "Identity Crisis Screenshot")
 
 This Mac thinks it's an Apple II. Wait. No...

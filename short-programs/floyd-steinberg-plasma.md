@@ -1,5 +1,7 @@
 # Floyd-Steinberg Plasma
 
+![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red)
+
 ![image](media/floyd-steinberg-plasma.jpg "Floyd-Steinberg Plasma")
 
 Floyd-Steinberg dithering algorithm implemented in one line of Applesoft.

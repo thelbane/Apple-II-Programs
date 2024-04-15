@@ -1,5 +1,7 @@
 # Sierpinski Triangle
 
+![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green)
+
 ![image](media/sierpinski.gif "Sierpinski Triangle Screenshot")
 
 A triangle made of triangles made of triangles made of triangles. What could be simpler?
