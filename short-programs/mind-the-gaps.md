@@ -2,7 +2,9 @@
 
 ![image](media/mind-the-gaps.gif "Mind The Gaps Screenshot")
 
-This Mac thinks it's an Apple II. Wait. No...
+## First Place - 2020 Two-Liner Contest
+
+Fast-paced action platformer! Move the bouncing ball to the right using your joystick. Pressing button 0 will make the ball bounce higher.
 
 ## Program
 
@@ -12,4 +14,4 @@ This Mac thinks it's an Apple II. Wait. No...
 
 ## Discussion
 
-[Apple II Enthusiasts Group Permalink](https://www.facebook.com/groups/5251478676/posts/10163502202643677/)
+[Apple II Software Enthusiasts Group Permalink](https://www.facebook.com/groups/418327412201896/posts/533623624005607/)
