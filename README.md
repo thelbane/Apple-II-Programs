@@ -4,15 +4,29 @@
 
 | Project Link | Thumbnail | Description |
 | --- | --- | --- |
-| [Snake Game](short-programs/snake-game.md) | ![Snake Game](short-programs/media/snake-game-tn.png) | Don't run into your own tail! |
+| [City Scape](short-programs/city-scape.md) | ![City Scape](short-programs/media/city-scape-tn.png) | Randomly generates a city skyline |
+| [Driving](short-programs/driving.md) | ![Driving](short-programs/media/driving-tn.png) | Driving game with obstacles |
+| [Fireworks](short-programs/fireworks.md) | ![Fireworks](short-programs/media/fireworks-tn.png) | Animated fireworks display |
+| [FizzBuzz](short-programs/fizzbuzz.md) | ![FizzBuzz](short-programs/media/fizzbuzz-tn.png) | I AM SO SMART! S-M-R-T! |
+| [Floyd-Steinberg Plasma](short-programs/floyd-steinberg-plasma.md) | ![Floyd-Steinberg Plasma](short-programs/media/floyd-steinberg-plasma-tn.png) | F-S dithered sine waves |
+| [Gumballs](short-programs/gumballs.md) | ![Gumballs](short-programs/media/gumballs-tn.png) | Draws 260 gumballs on the screen |
+| [Random Plasma](short-programs/random-plasma.md) | ![Random Plasma](short-programs/media/random-plasma-tn.png) | Random dithered sine waves |
 
 ## Two-Liners
 
 | Project Link | Thumbnail | Description |
 | --- | --- | --- |
-| [Gumballs](short-programs/gumballs.md) | ![Gumballs](short-programs/media/gumballs-tn.png) | Don't run into your own tail! |
+| [Desert Island](short-programs/desert-island.md) | ![Desert Island](short-programs/media/desert-island-tn.png) | Text adventure game |
+| [Hello](short-programs/hello.md) | ![Hello](short-programs/media/hello-tn.png) | Handy Applesoft program loader |
+| [Snake Game](short-programs/snake-game.md) | ![Snake Game](short-programs/media/snake-game-tn.png) | Interactive snake game |
+| [Stacker](short-programs/stacker.md) | ![Stacker](short-programs/media/stacker-tn.png) | Simple stacking game |
 
 ## Three-or-More-Liners
+
+| Project Link | Thumbnail | Description |
+| --- | --- | --- |
+| [Color Plasma](short-programs/color-plasma.md) | ![Color Plasma](short-programs/media/color-plasma-tn.png) | F-S dithered perspective landscape |
+
 
 ## Other Fun Projects
 
@@ -27,17 +41,11 @@ This is a collection of [short programs](short-programs) I've written for the Ap
 ## Usage
 Copy and paste these programs into your favorite Apple II emulator _or_ enter them into your actual Apple II and type `RUN`. Then sit back and watch the magic happen... slowly... because Applesoft is slow.
 
-* [Snake Game](short-programs/snake-game.md)
-* [Gumballs](short-programs/gumballs.md)
-* [Stacker](short-programs/stacker.md)
-* [City Scape](short-programs/city-scape.md)
-* [Driving](short-programs/driving.md)
-* [Fizz Buzz](short-programs/fizzbuzz.md)
-* [Fireworks](short-programs/fireworks.md)
-* [Random Plasma](short-programs/random-plasma.md)
+*
+*
 * [Floyd-Steinberg Plasma](short-programs/floyd-steinberg-plasma.md)
-* [Color Plasma](short-programs/color-plasma.md)
-* [Hello](short-programs/hello.md)
+*
+*
 * [Desert Island](short-programs/desert-island.md)
 * [Typing Game](short-programs/typing-game.md)
 * [Sprite](short-programs/sprite.md)

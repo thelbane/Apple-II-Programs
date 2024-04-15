@@ -1,4 +1,4 @@
-# Fizzbuzz
+# FizzBuzz
 
 Applesoft implementation of [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz#:~:text=Fizz%20buzz%20is%20a%20group,with%20the%20word%20%22fizzbuzz%22.).
 
