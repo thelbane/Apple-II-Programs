@@ -1,6 +1,4 @@
-# Programs For Your Apple II
-
-## Short Programs
+# Short Programs
 
 Select the **Project Link** below to view each project's details, including the program code. You can either copy and paste these programs into your favorite Apple II emulator _or_ enter them into your actual Apple II by hand, then type `RUN` to execute the program.
 
