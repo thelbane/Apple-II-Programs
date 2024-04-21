@@ -3,6 +3,18 @@
 
 @import "{{ site.theme }}";
 
-code {
-  overflow-wrap: anywhere;
+@font-face {
+  font-family: "PrintChar21";
+  src: url("../fonts/PrintChar21.ttf");
+}
+
+code, pre {
+  color: #6aa63f;
+  font-size: 14px;
+  font-family: PrintChar21;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;
 }

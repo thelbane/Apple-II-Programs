@@ -8,14 +8,16 @@ Target Practice is a solitaire version of the classic artillery game. Hit the re
 
 ## Program
 
-`0DIMY(140):POKE34,20:HOME:HCOLOR=7:FORU=7TO16:HGR:R=RND(1)*37:FORN=0TO139:T=INT(N/8)=U:Y(N)=149-R+COS(N*R*.001+R)*R:X=N*2:Y=Y(N):HPLOTX,0TOX+1,Y:HPLOTTOX+1,Y+5*T:NEXT:E=Y(20)-5:FORN=0TO4:HPLOT41-N,E+NTO41,E+N:NEXT:P=2000:FORQ=0TO1:P=P/2`
+```
+0DIMY(140):POKE34,20:HOME:HCOLOR=7:FORU=7TO16:HGR:R=RND(1)*37:FORN=0TO139:T=INT(N/8)=U:Y(N)=149-R+COS(N*R*.001+R)*R:X=N*2:Y=Y(N):HPLOTX,0TOX+1,Y:HPLOTTOX+1,Y+5*T:NEXT:E=Y(20)-5:FORN=0TO4:HPLOT41-N,E+NTO41,E+N:NEXT:P=2000:FORQ=0TO1:P=P/2
 
-`1INPUT"ANG,PWR:";A,V:R=A*-.0175:C=COS(R)*V:D=SIN(R)*V:X=0:Y=0:FORT=0TO10STEP0.1:HPLOTX,Y:X=41+INT(C*T/2-T*T)*2:Y=E+D*T+9.8*T*T:I=X/2*(X>0ANDX<280):T=T+((Y>Y(I))+(X<0)+(X>279)+(Y<0))*15:NEXT:Q=INT(X/16)=U:NEXT:S=S+P:NEXT:?"SCORE:"INT(S)`
+1INPUT"ANG,PWR:";A,V:R=A*-.0175:C=COS(R)*V:D=SIN(R)*V:X=0:Y=0:FORT=0TO10STEP0.1:HPLOTX,Y:X=41+INT(C*T/2-T*T)*2:Y=E+D*T+9.8*T*T:I=X/2*(X>0ANDX<280):T=T+((Y>Y(I))+(X<0)+(X>279)+(Y<0))*15:NEXT:Q=INT(X/16)=U:NEXT:S=S+P:NEXT:?"SCORE:"INT(S)
+```
 
 ### Human Readable
 Thanks [Ted Thompson](https://github.com/TedThompson) for taking the time to reformat the listing. For fun, and to help anyone trying to decipher my code, I decided to attempt to describe what each line does here:
 
-```Applesoft
+```
 100 DIM Y(140): REM INITIALIZE THE ARRAY CONTAINING THE Y-COORDINATES OF THE GROUND
 110 POKE 34,20: REM SET THE TOP OF THE TEXT WINDOW TO 20
 120 HOME: REM CLEAR THE SCREEN
