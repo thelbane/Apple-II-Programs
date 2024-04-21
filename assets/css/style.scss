@@ -18,3 +18,40 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
 }
+
+
+/**
+ * Codeblock.
+ */
+pre.highlight {
+  position: relative;
+
+  // copy code to clipboard
+  .copy {
+    font-size: 10px;
+    font-family: PrintChar21;
+    padding: 5px 15px;
+    border-style: solid;
+    border-color: #6aa63f;
+    border-radius: 10px;
+    color: #6aa63f;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    opacity: 0;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: white;
+      opacity: 1;
+    }
+  }
+
+  &:active .copy,
+  &:focus .copy,
+  &:hover .copy {
+    background: white;
+    opacity: 1;
+  }
+}
