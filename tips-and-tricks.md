@@ -132,14 +132,19 @@ Let's look at the progression again.
 
 ``` Applesoft
 0 FOR N = 0 TO 1 : PRINT N; : N = PEEK(-16384) > 127 : NEXT : POKE -16368,0
+
 0FORN=0TO1:PRINTN;:N=PEEK(-16384)>127:NEXT:POKE-16368,0
+
 0FORN=0TO1:?N;:N=PEEK(-16384)>127:NEXT:POKE-16368,0
+
 0FORN=0TO1:?N;:N=PEEK(49152)>127:NEXT:POKE49168,0
+
 0FORN=0TO1:?N;:N=PEEK(-4^7)>127:NEXT:POKE49168,0
+
 0FORN=0TO1:?N;:N=PEEK(-4^7)>127:NEXT:GETA$
 ```
 
-If you've been running each step in our optimization, you may have noticed that computing`-4^7` is a bit slower than the previous iterations. It saves a character, but at the expense of speed. This is a trade-off that I usually don't make unless I absolutely need that one extra character, but this section is about optimizing the number of characters.
+If you've been running each step in our optimization, you may have noticed that computing `-4^7` is a bit slower than the previous iterations. It saves a character, but at the expense of speed. This is a trade-off that I usually don't make unless I absolutely need that one extra character, but this section is about optimizing the number of characters.
 
 Can we make it shorter? I'm not sure, but let's try some stuff...
 
