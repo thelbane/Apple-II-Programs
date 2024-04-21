@@ -34,9 +34,9 @@ Programs with the ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) badg
 | [Tower of Hanoi](short-programs/tower-of-hanoi.md) | ![Tower of Hanoi](short-programs/media/tower-of-hanoi-tn.png) | Interactive puzzle game<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
 | [Color Plasma](short-programs/color-plasma.md) | ![Color Plasma](short-programs/media/color-plasma-tn.png) | F-S dithered perspective landscape<br>![two-liner](https://img.shields.io/badge/applesoft-green) ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) |
 
-### Disk Image
-The following image contains ~~all~~ some of the above programs in a single, easy-to-use package.
-* [short-programs.dsk](short-programs/short-programs.dsk)  ![Download](assets/images/download.png)<br>![incomplete](https://img.shields.io/badge/status-incomplete-orange)
+### Download The Disk Image
+The following image contains the above programs in a single, easy-to-use package.
+* [short-programs.dsk](short-programs/short-programs.dsk)  ![Download](assets/images/download.png)<br>![incomplete](https://img.shields.io/badge/status-up--to--date-green)
 
 ### Tips & Tricks
 If you're interested in writing your own one- and two-liners, I've compiled some [tips & tricks](tips-and-tricks.md) that you might find helpful.
