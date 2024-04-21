@@ -8,7 +8,7 @@ Whoa, this one has comments in the code! This is a 3-color version of the [Floyd
 
 ## Program
 
-```BASIC
+```
 0 DIMA(2,281):HGR2:HCOLOR=7:REM "A" IS THE ERROR CORRECTION BUFFER
 1 FORY=0TO191:T=1-T:FORX=0TO139
 2 V=SIN((X-70)/(1+(Y/10)))+1:REM COMPUTE VALUE

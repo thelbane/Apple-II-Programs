@@ -12,4 +12,6 @@ At first glance, Lee Fastenau's "Interference: A Study in Binary Simplicity" may
 
 ## Program
 
-`0HGR2:FORY=0TO191:FORX=0TO279:HCOLOR=(RND(1)>(SIN(Y*.1)+2+SIN(X*.1))/4)*3:HPLOTX,Y:NEXT:NEXT`
+```
+0HGR2:FORY=0TO191:FORX=0TO279:HCOLOR=(RND(1)>(SIN(Y*.1)+2+SIN(X*.1))/4)*3:HPLOTX,Y:NEXT:NEXT
+```
