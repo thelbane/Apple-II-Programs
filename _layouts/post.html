@@ -27,7 +27,10 @@ layout: default
 
 {% if page.discussion %}
   {% capture discussion_section %}## Discussion
-[{{page.discussion.name}}]({{page.discussion.url}}){% endcapture %}
+  {% for link in page.discussion %}[{{link.name}}]({{link.url}})
+
+  {% endfor %}
+  {% endcapture %}
   {{ discussion_section | markdownify }}
 {% endif %}
 

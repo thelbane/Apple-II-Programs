@@ -9,8 +9,9 @@ screenshot: /media/junk-drawer.png
 thumbnail: /media/junk-drawer-tn.png
 source: /src/junk-drawer.txt
 discussion:
-    name: Apple II Software Enthusiasts Group Permalink
-    url: https://www.facebook.com/groups/418327412201896/posts/935604477140851/
+    -
+        name: Apple II Software Enthusiasts Group Permalink
+        url: https://www.facebook.com/groups/418327412201896/posts/935604477140851/
 ---
 
 This is a paint program that draws in big, chunky, delicious pixels.

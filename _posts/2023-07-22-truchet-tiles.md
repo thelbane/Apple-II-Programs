@@ -9,8 +9,9 @@ screenshot: /media/truchet-tiles.png
 thumbnail: /media/truchet-tiles-tn.png
 source: /src/truchet-tiles.txt
 discussion:
-    name: Apple II Enthusiasts Group Permalink
-    url: https://www.facebook.com/groups/5251478676/posts/10162989967278677/
+    -
+        name: Apple II Enthusiasts Group Permalink
+        url: https://www.facebook.com/groups/5251478676/posts/10162989967278677/
 ---
 
 It's not a maze. It's a [Truchet tile](https://en.wikipedia.org/wiki/Truchet_tiles) pattern.

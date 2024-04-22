@@ -9,8 +9,9 @@ screenshot: /media/fireworks.gif
 thumbnail: /media/fireworks-tn.png
 source: /src/fireworks.txt
 discussion:
-    name: Apple II Enthusiasts Group Permalink
-    url: https://www.facebook.com/groups/5251478676/permalink/10158224498678677/
+    -
+        name: Apple II Enthusiasts Group Permalink
+        url: https://www.facebook.com/groups/5251478676/permalink/10158224498678677/
 ---
 
 Boom. Now every day can be Independence Day.

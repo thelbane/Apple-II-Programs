@@ -4,6 +4,9 @@ title: "Apple II Programs"
 includes:
   - short-programs/src
 tag_map:
+  applesoft: applesoft-green
   one-liner: one--liner-orange
+  two-liner: two--liner-blue
   1mhz-ok: 1MHz-ok-green
   1mhz-slow: 1MHz-slow-red
+  notable: notable-gold

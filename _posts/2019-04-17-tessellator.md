@@ -9,8 +9,9 @@ screenshot: /media/tessellator.png
 thumbnail: /media/tessellator-tn.png
 source: /src/tessellator.txt
 discussion:
-    name: Apple II Enthusiasts Group Permalink
-    url: https://www.facebook.com/groups/5251478676/permalink/10158481850618677/
+    -
+        name: Apple II Enthusiasts Group Permalink
+        url: https://www.facebook.com/groups/5251478676/permalink/10158481850618677/
 ---
 
 Tessellated pattern generator.

@@ -4,30 +4,10 @@ Select the **Project Link** below to view each project's details, including the 
 
 Programs with the ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) badge will run perfectly fine on a 1MHz Apple II, but may take minutes or hours to execute. For these programs, I strongly recommend using an emulator at full speed or an accelerated Apple II.
 
-| Project Link | Thumbnail | Description |
-| --- | --- | --- |
-{% for post in site.posts %}| [{{post.title}}]({{post.url}}) | [![{{post.title}}]({{post.thumbnail}})]({{post.url}}) | {{post.description}}<br/>{% include badges.md %} |
+| Project Link | Thumbnail |
+| --- | --- |
+{% for post in site.posts %}| [{{post.date | date: "%-d %B %Y"}} - {{post.title}}]({{post.url}})<br/>{{post.description}}<br/>{% include badges.md %} | [![{{post.title}}]({{post.thumbnail}})]({{post.url}}) |
 {% endfor %}
-
-| Project Link | Thumbnail | Description |
-| --- | --- | --- |
-| [Typing Game](short-programs/typing-game.md) | ![Typing Game](short-programs/media/typing-game-tn.png) | Type letters and get a high score<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Concentration](short-programs/concentration.md) | ![Concentration](short-programs/media/concentration-tn.png) | Card matching game<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Desert Island](short-programs/desert-island.md) | ![Desert Island](short-programs/media/desert-island-tn.png) | Text adventure game<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Fifteen Puzzle](short-programs/fifteen-puzzle.md) | ![Fifteen Puzzle](short-programs/media/fifteen-puzzle-tn.png) | Sliding tile puzzle<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Geometric](short-programs/geometric.md) | ![Geometric](short-programs/media/geometric-tn.png) | Geometric pattern<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [GR-Kanoid](short-programs/gr-kanoid.md) ![submission](assets/images/contest-submission.png) | ![GR-Kanoid](short-programs/media/gr-kanoid-tn.png) | 2019 Two-Liner Contest submission<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) ![notable](https://img.shields.io/badge/notable-gold) |
-| [Hello](short-programs/hello.md) | ![Hello](short-programs/media/hello-tn.png) | Handy Applesoft program loader<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Identity Crisis](short-programs/identity-crisis.md) | ![Identity Crisis](short-programs/media/identity-crisis-tn.png) | Susan Kare's "Happy Mac" on an Apple II<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Mind The Gaps](short-programs/mind-the-gaps.md) ![winner](assets/images/first-place.png) | ![Mind The Gaps](short-programs/media/mind-the-gaps-tn.png) | 2019 Two-Liner Contest winner<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) ![notable](https://img.shields.io/badge/notable-gold) |
-| [Sierpinski Triangle](short-programs/sierpinski.md) | ![Sierpinski Triangle](short-programs/media/sierpinski-tn.png) | Draws the fabled fabulous fractal<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Snake Game](short-programs/snake-game.md) | ![Snake Game](short-programs/media/snake-game-tn.png) | Interactive snake game<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Sprite](short-programs/sprite.md) | ![Sprite](short-programs/media/sprite-tn.png) | Draws Kirby on the screen<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Stacker](short-programs/stacker.md) | ![Stacker](short-programs/media/stacker-tn.png) | Simple stacking game<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [SYS.DIAG](short-programs/sys-diag.md) | ![Tower of Hanoi](short-programs/media/sys-diag-tn.png) | System diagnostic (not really)<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Target Practice](short-programs/target-practice.md) | ![Target Practice](short-programs/media/target-practice-tn.png) | Artillery game<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Tower of Hanoi](short-programs/tower-of-hanoi.md) | ![Tower of Hanoi](short-programs/media/tower-of-hanoi-tn.png) | Interactive puzzle game<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Color Plasma](short-programs/color-plasma.md) | ![Color Plasma](short-programs/media/color-plasma-tn.png) | F-S dithered perspective landscape<br>![two-liner](https://img.shields.io/badge/applesoft-green) ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) |
 
 ### Download The Disk Image
 The following image contains the above programs in a single, easy-to-use package.
