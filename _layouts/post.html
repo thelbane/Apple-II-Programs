@@ -1,30 +1,26 @@
 ---
 layout: default
 ---
-{% assign codefile=page.name | replace:'.md','.txt' %}
 
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
 <h1>{{page.title}}</h1>
 <p class="view">by {{ page.author | default: site.author }}</p>
 
-{% for badge in page.badges %}
-{% if badge=="one-liner" %}
-<img src="https://img.shields.io/badge/one--liner-orange" />
-{% else if badge=="1mhz-ok" %}
-<img src="https://img.shields.io/badge/1MHz-ok-green" />
-{% endif %}
+{% for tag in page.tags %}
+{% include tag.md %}
 {% endfor %}
 
-
-{% capture foo %}![image](media/{{ page.screenshot }} "{{ page.title }} Screenshot"){% endcapture %}
-{{ foo | markdownify }}
+{% if page.screenshot %}
+{% capture screenshot %}![image]({{ page.screenshot }} "{{ page.title }} Screenshot"){% endcapture %}
+{{ screenshot | markdownify }}
+{% endif %}
 
 {{content}}
 
-{% if page.has_code %}
+{% if page.source %}
   {% capture code_section %}## Program
 ```
-{% include_relative {{codefile}} %}
+{% include_relative {{page.source}} %}
 ```{% endcapture %}
   {{ code_section | markdownify }}
 {% endif %}

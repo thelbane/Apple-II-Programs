@@ -6,16 +6,11 @@ Programs with the ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) badg
 
 | Project Link | Thumbnail | Description |
 | --- | --- | --- |
-| [City Scape](short-programs/city-scape.md) | ![City Scape](short-programs/media/city-scape-tn.png) | Randomly generates a city skyline<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Driving](short-programs/driving.md) | ![Driving](short-programs/media/driving-tn.png) | Driving game with obstacles<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Fireworks](short-programs/fireworks.md) | ![Fireworks](short-programs/media/fireworks-tn.png) | Animated fireworks display<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [FizzBuzz](short-programs/fizzbuzz.md) | ![FizzBuzz](short-programs/media/fizzbuzz-tn.png) | I AM SO SMART! S-M-R-T!<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Floyd-Steinberg Plasma](short-programs/floyd-steinberg-plasma.md) | ![Floyd-Steinberg Plasma](short-programs/media/floyd-steinberg-plasma-tn.png) | F-S dithered sine waves<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) |
-| [Gumballs](short-programs/gumballs.md) | ![Gumballs](short-programs/media/gumballs-tn.png) | Draws 260 gumballs on the screen<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Junk Drawer](short-programs/junk-drawer.md) | ![City Scape](short-programs/media/junk-drawer-tn.png) | Draw things with chunky pixels<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
-| [Random Plasma](short-programs/random-plasma.md) | ![Random Plasma](short-programs/media/random-plasma-tn.png) | Random dithered sine waves<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) |
-| [Tessellator](short-programs/tessellator.md) | ![Tessellator](short-programs/media/tessellator-tn.png) | Tessellated patterns<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) |
-| [Truchet Tiles](short-programs/truchet-tiles.md) | ![Truchet Tiles](short-programs/media/truchet-tiles-tn.png) | Crazy mazy looking thing-a-ma-bob<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) |
+{% for post in site.posts %}| [{{post.title}}]({{post.url}}) | [![{{post.title}}]({{post.thumbnail}})]({{post.url}}) | {{post.description}}<br/>{% include badges.md %} |
+{% endfor %}
+
+| Project Link | Thumbnail | Description |
+| --- | --- | --- |
 | [Typing Game](short-programs/typing-game.md) | ![Typing Game](short-programs/media/typing-game-tn.png) | Type letters and get a high score<br>![one-liner](https://img.shields.io/badge/one--liner-orange) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
 | [Concentration](short-programs/concentration.md) | ![Concentration](short-programs/media/concentration-tn.png) | Card matching game<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |
 | [Desert Island](short-programs/desert-island.md) | ![Desert Island](short-programs/media/desert-island-tn.png) | Text adventure game<br>![two-liner](https://img.shields.io/badge/two--liner-blue) ![1MHz: ok](https://img.shields.io/badge/1MHz-ok-green) |

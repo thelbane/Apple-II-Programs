@@ -1,3 +1,9 @@
 theme: jekyll-theme-minimal
 logo: assets/images/site-badge.png
 title: "Apple II Programs"
+includes:
+  - short-programs/src
+tag_map:
+  one-liner: one--liner-orange
+  1mhz-ok: 1MHz-ok-green
+  1mhz-slow: 1MHz-slow-red

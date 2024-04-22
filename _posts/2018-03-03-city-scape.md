@@ -1,13 +1,13 @@
 ---
 layout: post
 title: City Scape
+description: Randomly generates a city skyline
+tags: one-liner 1mhz-ok
 date: 2018-03-03
 author: Lee Fastenau
-screenshot: city-scape.jpg
-source: src/city-scape.txt
-badges:
-    - one-liner
-    - 1mhz-ok
+screenshot: /media/city-scape.jpg
+thumbnail: /media/city-scape-tn.png
+source: /src/city-scape.txt
 discussion:
     name: Apple II Enthusiasts Group Permalink
     url: https://www.facebook.com/groups/5251478676/permalink/10157310582478677/
