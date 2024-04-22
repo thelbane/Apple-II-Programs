@@ -3,11 +3,36 @@ layout: default
 ---
 
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
-<h1>{{ page.title }}</h1>
-
+<h1>{{page.title}}</h1>
 <p class="view">by {{ page.author | default: site.author }}</p>
 
+{% for tag in page.tags %}
+{% include tag.md %}
+{% endfor %}
+
+{% if page.screenshot %}
+{% capture screenshot %}![image]({{ page.screenshot }} "{{ page.title }} Screenshot"){% endcapture %}
+{{ screenshot | markdownify }}
+{% endif %}
+
 {{content}}
+
+{% if page.source %}
+  {% capture code_section %}## Program
+```
+{% include_relative {{page.source}} %}
+```{% endcapture %}
+  {{ code_section | markdownify }}
+{% endif %}
+
+{% if page.discussion %}
+  {% capture discussion_section %}## Discussion
+  {% for link in page.discussion %}[{{link.name}}]({{link.url}})
+
+  {% endfor %}
+  {% endcapture %}
+  {{ discussion_section | markdownify }}
+{% endif %}
 
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>

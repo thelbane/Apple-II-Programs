@@ -1,0 +1,1 @@
+{% if {{site.tag_map[tag]}} %}<img src="https://img.shields.io/badge/{{site.tag_map[tag]}}" />{% endif %}

@@ -1,0 +1,1 @@
+{% for tag in post.tags %}{% include tag.md %} {% endfor %}

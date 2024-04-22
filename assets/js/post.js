@@ -22,5 +22,3 @@ codeBlocks.forEach(function (codeBlock) {
     }, fourSeconds);
   });
 });
-
-console.log("Hello");
