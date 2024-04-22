@@ -1,13 +1,39 @@
 ---
 layout: default
 ---
+{% assign codefile=page.name | replace:'.md','.txt' %}
 
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
-<h1>{{ page.title }}</h1>
-
+<h1>{{page.title}}</h1>
 <p class="view">by {{ page.author | default: site.author }}</p>
 
+{% for badge in page.badges %}
+{% if badge=="one-liner" %}
+<img src="https://img.shields.io/badge/one--liner-orange" />
+{% else if badge=="1mhz-ok" %}
+<img src="https://img.shields.io/badge/1MHz-ok-green" />
+{% endif %}
+{% endfor %}
+
+
+{% capture foo %}![image](media/{{ page.screenshot }} "{{ page.title }} Screenshot"){% endcapture %}
+{{ foo | markdownify }}
+
 {{content}}
+
+{% if page.has_code %}
+  {% capture code_section %}## Program
+```
+{% include_relative {{codefile}} %}
+```{% endcapture %}
+  {{ code_section | markdownify }}
+{% endif %}
+
+{% if page.discussion %}
+  {% capture discussion_section %}## Discussion
+[{{page.discussion.name}}]({{page.discussion.url}}){% endcapture %}
+  {{ discussion_section | markdownify }}
+{% endif %}
 
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
