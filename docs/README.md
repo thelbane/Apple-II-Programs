@@ -1,6 +1,6 @@
 # Short Programs
 
-Select the **Project Link** below to view each project's details, including the program code. You can either copy and paste these programs into your favorite Apple II emulator _or_ enter them into your actual Apple II by hand, then type `RUN` to execute the program.
+Select a **Project Link** below to view each project's details, including the program code. You can either copy and paste these programs into your favorite Apple II emulator _or_ enter them into your actual Apple II by hand, then type `RUN` to execute the program.
 
 Programs with the ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) badge will run perfectly fine on a 1MHz Apple II, but may take minutes or hours to execute. For these programs, I strongly recommend using an emulator at full speed or an accelerated Apple II.
 
