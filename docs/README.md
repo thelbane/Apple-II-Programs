@@ -1,7 +1,13 @@
-# Apple II Programs
+# Short Programs
 
-## Short Programs
-The best way to experience this content is via the [apple2programs.com Github Pages site](https://www.apple2programs.com). Alternatively, you can browse the [/docs/_posts](docs/_posts) folder on Github, but trust me, the first way is better.
+Select the **Project Link** below to view each project's details, including the program code. You can either copy and paste these programs into your favorite Apple II emulator _or_ enter them into your actual Apple II by hand, then type `RUN` to execute the program.
+
+Programs with the ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) badge will run perfectly fine on a 1MHz Apple II, but may take minutes or hours to execute. For these programs, I strongly recommend using an emulator at full speed or an accelerated Apple II.
+
+| Project Link | Thumbnail |
+| --- | --- |
+{% for post in site.posts %}| [{{post.date | date: "%-d %B %Y"}} - {{post.title}}]({{post.url}})<br/>{{post.description}}<br/>{% include badges.md %} | [![{{post.title}}]({{post.thumbnail}})]({{post.url}}) |
+{% endfor %}
 
 ### Download The Disk Image
 The following image contains the above programs in a single, easy-to-use package.
