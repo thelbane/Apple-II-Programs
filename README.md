@@ -8,7 +8,7 @@ The following image contains the above programs in a single, easy-to-use package
 * [short-programs.dsk](https://github.com/thelbane/Apple-II-Programs/raw/main/short-programs/short-programs.dsk) ![Download](images/download.png)<br>![incomplete](https://img.shields.io/badge/status-up--to--date-green)
 
 ### Tips & Tricks
-If you're interested in writing your own one- and two-liners, I've compiled some [tips & tricks](_docs/tips-and-tricks.md) that you might find helpful.
+If you're interested in writing your own one- and two-liners, I've compiled some [tips & tricks](docs/tips-and-tricks.md) that you might find helpful.
 
 # My Other Apple II Projects
 
