@@ -2,7 +2,7 @@
 layout: post
 title: City Scape
 description: Randomly generates a city skyline
-tags: one-liner 1mhz-ok
+tags: program one-liner 1mhz-ok
 date: 2018-03-03
 author: Lee Fastenau
 screenshot: /media/city-scape.jpg

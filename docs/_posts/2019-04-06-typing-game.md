@@ -2,7 +2,7 @@
 layout: post
 title: Typing Game
 description: Type letters and get a high score
-tags: one-liner 1mhz-ok
+tags: program one-liner 1mhz-ok
 date: 2019-04-06
 author: Lee Fastenau
 screenshot: /media/typing-game.gif

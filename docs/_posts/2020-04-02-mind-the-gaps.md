@@ -2,7 +2,7 @@
 layout: post
 title: Mind The Gaps
 description: 2019 Two-Liner Contest winner
-tags: two-liner 1mhz-ok notable
+tags: program two-liner 1mhz-ok notable
 date: 2020-04-02
 author: Lee Fastenau
 screenshot: /media/mind-the-gaps.gif

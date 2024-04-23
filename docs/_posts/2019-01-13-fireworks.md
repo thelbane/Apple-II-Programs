@@ -2,7 +2,7 @@
 layout: post
 title: Fireworks
 description: Animated fireworks display
-tags: one-liner 1mhz-ok
+tags: program one-liner 1mhz-ok
 date: 2019-01-13
 author: Lee Fastenau
 screenshot: /media/fireworks.gif

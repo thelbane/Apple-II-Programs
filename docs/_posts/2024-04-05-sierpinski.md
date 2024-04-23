@@ -2,7 +2,7 @@
 layout: post
 title: Sierpinski Triangle
 description: Draws the fabled fabulous fractal
-tags: two-liner 1mhz-ok
+tags: program two-liner 1mhz-ok
 date: 2024-04-05
 author: Lee Fastenau
 screenshot: /media/sierpinski.gif

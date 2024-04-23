@@ -2,7 +2,7 @@
 layout: post
 title: Fifteen Puzzle
 description: Sliding tile puzzle
-tags: two-liner 1mhz-ok
+tags: program two-liner 1mhz-ok
 date: 2024-04-13
 author: Lee Fastenau
 screenshot: /media/fifteen-puzzle.gif

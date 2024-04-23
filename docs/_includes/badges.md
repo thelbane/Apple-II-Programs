@@ -1,1 +1,1 @@
-{% for tag in post.tags %}{% include tag.md %} {% endfor %}
+{% for tag in include.tags %}{% include tag.md tag=tag %} {% endfor %}
