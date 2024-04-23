@@ -3,8 +3,6 @@
 ## Short Programs
 The best way to experience this content is via the [apple2programs.com Github Pages site](https://www.apple2programs.com). Alternatively, you can browse the [/docs/_posts](docs/_posts) folder on Github, but trust me, the first way is better.
 
----
-
 ### Download The Disk Image
 The following image contains the above programs in a single, easy-to-use package.
 * [short-programs.dsk](https://github.com/thelbane/Apple-II-Programs/raw/main/short-programs/short-programs.dsk) ![Download](images/download.png)<br>![incomplete](https://img.shields.io/badge/status-up--to--date-green)
