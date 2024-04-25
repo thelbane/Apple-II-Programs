@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Latest News & Programs
+# Latest Stuff
 
 {% for post in site.posts limit: 10 %}
 {% include program_post_body.html post=post %}
@@ -14,10 +14,7 @@ Select a **Project Link** below to view each project's details, including the pr
 
 Programs with the ![1MHz: slow](https://img.shields.io/badge/1MHz-slow-red) badge will run perfectly fine on a 1MHz Apple II, but may take minutes or hours to execute. For these programs, I strongly recommend using an emulator at full speed or an accelerated Apple II.
 
-| Project Link | Thumbnail |
-| --- | --- |
-{% for post in site.posts %}{% if post.tags contains "program" %}| [{{post.date | date: "%-d %B %Y"}} - {{post.title}}]({{post.url}})<br/>{{post.description}}<br/>{% include badges.md tags=post.tags %} | [![{{post.title}}]({{post.thumbnail}})]({{post.url}}) |
-{% endif %}{% endfor %}
+{% include program_list.md %}
 
 ### Download The Disk Image
 The following image contains the above programs in a single, easy-to-use package.

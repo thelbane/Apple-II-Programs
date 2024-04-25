@@ -35,3 +35,22 @@ layout: default
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
 {% endif %}
+
+{% for post in site.posts %}
+  {% if post.url == page.url %}
+    {% assign pOffset = forloop.index0 | minus: 1 %}
+    {% assign nOffset = pOffset | plus: 2 %}
+    {% if forloop.first == false %}
+      {% assign next_post = site.posts[pOffset] %}
+    {% endif %}
+    {% if forloop.last == false %}
+      {% assign previous_post = site.posts[nOffset] %}
+    {% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<div style="display: flex;justify-content: space-between;">
+{% if next_post %}<a href="{{next_post.url}}"><- {{next_post.title}} (Newer)</a>{%endif%}&nbsp;
+&nbsp;{% if previous_post %}<a href="{{previous_post.url}}">{{previous_post.title}} (Older) -></a>{%endif%}
+</div>
