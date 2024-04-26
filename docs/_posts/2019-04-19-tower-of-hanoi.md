@@ -2,7 +2,7 @@
 layout: post
 title: Tower of Hanoi
 description: Interactive puzzle game
-tags: two-liner 1mhz-ok
+tags: program two-liner 1mhz-ok
 date: 2019-04-19
 author: Lee Fastenau
 screenshot: /media/tower-of-hanoi.gif

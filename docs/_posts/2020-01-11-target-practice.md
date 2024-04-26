@@ -2,7 +2,7 @@
 layout: post
 title: Target Practice
 description: Artillery game
-tags: two-liner 1mhz-ok
+tags: program two-liner 1mhz-ok
 date: 2020-01-11
 author: Lee Fastenau
 screenshot: /media/target-practice.png

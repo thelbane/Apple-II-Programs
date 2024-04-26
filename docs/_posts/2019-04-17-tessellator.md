@@ -2,7 +2,7 @@
 layout: post
 title: Tessellator
 description: Tessellated patterns
-tags: one-liner 1mhz-slow
+tags: program one-liner 1mhz-slow
 date: 2019-04-17
 author: Lee Fastenau
 screenshot: /media/tessellator.png

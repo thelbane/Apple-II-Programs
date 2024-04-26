@@ -2,7 +2,7 @@
 layout: post
 title: Color Plasma
 description: F-S dithered perspective landscape
-tags: applesoft 1mhz-slow
+tags: program applesoft 1mhz-slow
 date: 2019-01-16
 author: Lee Fastenau
 screenshot: /media/color-plasma.jpg

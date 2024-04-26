@@ -2,7 +2,7 @@
 layout: post
 title: Junk Drawer
 description: Draw things with chunky pixels
-tags: one-liner 1mhz-ok
+tags: program one-liner 1mhz-ok
 date: 2022-03-03
 author: Lee Fastenau
 screenshot: /media/junk-drawer.png

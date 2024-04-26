@@ -2,7 +2,7 @@
 layout: post
 title: Snake Game
 description: Interactive snake game
-tags: two-liner 1mhz-ok
+tags: program two-liner 1mhz-ok
 date: 2019-03-02
 author: Lee Fastenau
 screenshot: /media/snake-game.gif

@@ -2,7 +2,7 @@
 layout: post
 title: Mind The Gaps
 description: 2019 Two-Liner Contest winner
-tags: two-liner 1mhz-ok notable
+tags: program two-liner 1mhz-ok notable
 date: 2020-04-02
 author: Lee Fastenau
 screenshot: /media/mind-the-gaps.gif
@@ -14,6 +14,6 @@ discussion:
         url: https://www.facebook.com/groups/418327412201896/posts/533623624005607/
 ---
 
-## First Place - 2020 Two-Liner Contest
+### First Place - 2020 Two-Liner Contest
 
 Fast-paced action platformer! Move the bouncing ball to the right using your joystick. Pressing button 0 will make the ball bounce higher.

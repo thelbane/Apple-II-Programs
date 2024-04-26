@@ -2,7 +2,7 @@
 layout: post
 title: Concentration
 description: Card matching game
-tags: two-liner 1mhz-ok
+tags: program two-liner 1mhz-ok
 date: 2024-04-08
 author: Lee Fastenau
 screenshot: /media/concentration.png

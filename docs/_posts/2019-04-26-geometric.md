@@ -2,7 +2,7 @@
 layout: post
 title: Geometric
 description: Geometric pattern
-tags: two-liner 1mhz-ok
+tags: program two-liner 1mhz-ok
 date: 2019-04-26
 author: Lee Fastenau
 screenshot: /media/geometric.png

@@ -2,7 +2,7 @@
 layout: post
 title: Desert Island
 description: Text adventure game
-tags: two-liner 1mhz-ok
+tags: program two-liner 1mhz-ok
 date: 2019-04-03
 author: Lee Fastenau
 screenshot: /media/desert-island.png
