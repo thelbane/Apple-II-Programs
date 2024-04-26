@@ -8,6 +8,17 @@
   src: url("../fonts/PrintChar21.ttf");
 }
 
+@font-face {
+  font-family: "AvantGardeGothic-Bold";
+  src: url("../fonts/itc-avant-garde-gothic_bold.woff");
+}
+
+h1, h2, h3, h4 {
+  font-family: AvantGardeGothic-Bold;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 code, pre {
   color: #6aa63f;
   font-size: 14px;
@@ -18,7 +29,6 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
 }
-
 
 /**
  * Codeblock.

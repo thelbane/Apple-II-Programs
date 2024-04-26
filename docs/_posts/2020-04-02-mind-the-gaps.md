@@ -14,6 +14,6 @@ discussion:
         url: https://www.facebook.com/groups/418327412201896/posts/533623624005607/
 ---
 
-## First Place - 2020 Two-Liner Contest
+### First Place - 2020 Two-Liner Contest
 
 Fast-paced action platformer! Move the bouncing ball to the right using your joystick. Pressing button 0 will make the ball bounce higher.

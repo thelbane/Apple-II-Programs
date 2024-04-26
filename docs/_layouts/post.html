@@ -13,8 +13,6 @@ layout: default
 {{ screenshot | markdownify }}
 {% endif %}
 
-{{content}}
-
 {% if page.source %}
   {% capture code_section %}## Program
 ```
@@ -22,6 +20,11 @@ layout: default
 ```{% endcapture %}
   {{ code_section | markdownify }}
 {% endif %}
+
+<h2>Information</h2>
+
+{{content}}
+
 
 {% if page.discussion %}
   {% capture discussion_section %}## Discussion
