@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+{% include reset.css %}
 
 @font-face {
   font-family: "PrintChar21";
