@@ -2,9 +2,11 @@
 layout: default
 ---
 
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
-<h1>{{page.title}}</h1>
-<p class="view">by {{ page.author | default: site.author }}</p>
+<div class="post-header">
+  <h3>{{ page.date | date: "%-d %B %Y" }}</h3>
+  <h1>{{page.title}}</h1>
+  <p>by {{ page.author | default: site.author }}</p>
+</div>
 
 {% include badges.md tags=page.tags%}<br/>
 
@@ -20,10 +22,10 @@ layout: default
   {{ code_section | markdownify }}
 {% endif %}
 
+{% if page.tags contains 'program' %}
 <h2>Information</h2>
-
+{% endif %}
 {{content}}
-
 
 {% if page.discussion %}
   {% capture discussion_section %}## Discussion
@@ -34,9 +36,11 @@ layout: default
   {{ discussion_section | markdownify }}
 {% endif %}
 
+{%  comment  %} 
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
 {% endif %}
+{% endcomment %}
 
 {% for post in site.posts %}
   {% if post.url == page.url %}
@@ -52,7 +56,18 @@ layout: default
   {% endif %}
 {% endfor %}
 
-<div style="display: flex;justify-content: space-between;">
-{% if next_post %}<a href="{{next_post.url}}"><- {{next_post.title}} (Newer)</a>{%endif%}&nbsp;
-&nbsp;{% if previous_post %}<a href="{{previous_post.url}}">{{previous_post.title}} (Older) -></a>{%endif%}
-</div>
+<hr />
+
+<div class="bottom-nav">
+{% if next_post %}
+  <span class="next-nav">
+    <a href="{{next_post.url}}"><- {{next_post.title}} (Newer)</a>
+    &nbsp;&nbsp;
+  </span>
+{%endif%}
+{% if previous_post %}
+  <span class="prev-nav">
+    <a href="{{previous_post.url}}">{{previous_post.title}} (Older) -></a>
+  </span>
+{%endif%}
+</div>  

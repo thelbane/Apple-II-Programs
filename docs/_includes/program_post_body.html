@@ -1,10 +1,18 @@
-{{ include.post.date | date: "%-d %B %Y" }}
-# [{{include.post.title}}]({{include.post.url}})
+<div class="inline-post">
+  <a class="inline-post-link" href="{{include.post.url}}">
+    <h2>{{ include.post.date | date: "%-d %B %Y" }}</h2>
+    <h1>{{ include.post.title }}</h1>
 
-{% include badges.md tags=include.post.tags%}
+    {% include badges.md tags=include.post.tags %}
 
-{% if include.post.screenshot %}
-![image]({{ include.post.thumbnail }} "{{ include.post.title }} Screenshot")
-{% endif %}
+    {% if include.post.screenshot %}
+      <img
+        class="screenshot"
+        src="{{ include.post.thumbnail | relative_url }}"
+        alt="{{ include.post.title }}" />
+    {% endif %}
 
-{{ include.post.content | strip_html | truncatewords: 50 }} [read full story]({{include.post.url}})
+    {{ include.post.content | strip_html | truncatewords: 50 }}<br><br>
+    <a href="{{ include.post.url | relative_url }}">read full story</a>
+  </a>
+</div>

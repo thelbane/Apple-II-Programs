@@ -31,13 +31,6 @@ body {
 }
 
 header {
-  background: $greenapple;
-  padding: 2rem;
-
-  a {
-    color: white;
-  }
-
   h1 {
     font-size: 3em;
     margin: 0 0 1rem 0;
@@ -45,10 +38,6 @@ header {
     img {
       max-height: 0.8em;
     }
-  }
-
-  p {
-    margin-bottom: 1rem;
   }
 
   ul {
@@ -73,13 +62,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $headingfont;
   font-weight: 400;
   margin: 1em 0 .5em 0;
-
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 h1, h2, h3 {
@@ -95,17 +77,28 @@ h2 {
   font-size: 1.5rem;
 }
 
+.post-header {
+  h1 {
+    margin: 0 0 1rem 0;
+  }
+
+  h3 {
+    margin: 0;
+  }
+}
+
 img.screenshot {
   max-width: 100%;
   object-fit: auto;
 }
 
-footer {
+header, footer {
   background: $greenapple;
   padding: 2rem;
 
   a {
     color: white;
+    text-decoration: none;
   }
 }
 
@@ -194,8 +187,91 @@ p {
 
 ul {
   list-style-type: circle;
-  list-style-position: inside;
+  list-style-position: outside;
   margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+b, strong {
+  font-weight:bold;
+}
+
+i, em {
+  font-style:italic;
+}
+
+a {
+  color: $greenapple;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.bottom-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prev-nav {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.next-nav, .prev-nav {
+  color: $greenapple;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin-top: 1em;
+  white-space: nowrap;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $greenapple;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.inline-post {
+  .inline-post-link {
+    display: block;
+    color: black;
+    text-decoration: none;
+    &:hover {
+      h1, h2 {
+        text-decoration: underline;
+        color: $greenapple;
+      }  
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h1, h2 {
+    color: black;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .screenshot {
+    display: block;
+    margin-bottom: 1em;
+  }
 }
 
 
