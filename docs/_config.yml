@@ -1,6 +1,7 @@
 theme: null
 logo: assets/images/site-badge.png
 title: "Apple II Programs"
+excerpt_separator: <!--more-->
 includes:
   - short-programs/src
 tag_map:

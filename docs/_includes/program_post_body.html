@@ -12,7 +12,7 @@
         alt="{{ include.post.title }}" />
     {% endif %}
 
-    {{ include.post.content | strip_html | truncatewords: 50 }}<br><br>
+    {{ include.post.excerpt }}<br><br>
     <a href="{{ include.post.url | relative_url }}">read full story</a>
   </a>
 </div>
