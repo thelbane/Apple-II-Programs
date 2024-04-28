@@ -6,11 +6,10 @@ layout: default
 <h1>{{page.title}}</h1>
 <p class="view">by {{ page.author | default: site.author }}</p>
 
-{% include badges.md tags=page.tags%}
+{% include badges.md tags=page.tags%}<br/>
 
 {% if page.screenshot %}
-{% capture screenshot %}![image]({{ page.screenshot }} "{{ page.title }} Screenshot"){% endcapture %}
-{{ screenshot | markdownify }}
+<img src="{{page.screenshot}}" class="screenshot" alt="{{page.title}}" />
 {% endif %}
 
 {% if page.source %}
