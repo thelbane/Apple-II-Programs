@@ -5,7 +5,7 @@
 
 $codefont: PrintChar21;
 $headingfont: AvantGardeGothic-Bold;
-$greenapple: #6FB536;
+$greenapple: #5db316;
 $cornerradius: .75em;
 
 @font-face {
@@ -273,6 +273,18 @@ hr {
     margin-bottom: 1em;
   }
 }
+
+figure {
+  text-align: center;
+  margin: 2rem 0;
+
+  img {
+    max-width: 80%;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.367);
+  }
+}
+
 
 
 
