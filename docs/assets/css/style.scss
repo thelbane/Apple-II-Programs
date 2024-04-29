@@ -19,7 +19,7 @@ $cornerradius: .75em;
 }
 
 body {
-  font-family: monospace;
+  font-family: Sans-Serif;
   font-size: 1rem;
   background: $greenapple;
 }
@@ -49,6 +49,7 @@ header {
 
     li {
       display: inline;
+      margin: .25rem;
     }
   }
 }
@@ -182,6 +183,7 @@ header, footer {
 }
 
 p {
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
