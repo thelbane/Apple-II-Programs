@@ -11,3 +11,6 @@ tag_map:
   1mhz-ok: 1MHz-ok-green
   1mhz-slow: 1MHz-slow-red
   notable: notable-gold
+plugins:
+  - jekyll-seo-tag
+  
