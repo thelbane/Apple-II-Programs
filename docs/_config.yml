@@ -13,4 +13,4 @@ tag_map:
   notable: notable-gold
 plugins:
   - jekyll-seo-tag
-  
+repository: thelbane/Apple-II-Programs
