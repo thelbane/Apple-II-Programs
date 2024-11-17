@@ -17,7 +17,7 @@ layout: default
 {% if page.source %}
   {% capture code_section %}## Program
 ```
-{% include_relative {{page.source}} %}
+{% include {{page.source}} %}
 ```{% endcapture %}
   {{ code_section | markdownify }}
 {% endif %}
