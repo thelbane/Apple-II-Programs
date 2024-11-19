@@ -15,10 +15,14 @@ layout: default
 {% endif %}
 
 {% if page.source %}
+  {% capture source_name %}{{ page.source | split: "/" | last }}{% endcapture %}
+  {% capture bas_path %}http://apple2ts.com#{{ site.url }}/programs/{{ source_name | split: "." | first }}.bas{% endcapture %}
   {% capture code_section %}## Program
 ```
 {% include {{page.source}} %}
-```{% endcapture %}
+```
+
+<a href="{{ bas_path }}">Try me!</a>{% endcapture %}
   {{ code_section | markdownify }}
 {% endif %}
 
