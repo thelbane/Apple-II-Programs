@@ -15,11 +15,17 @@ layout: default
 {% endif %}
 
 {% if page.source %}
-  {% capture source_name %}{{ page.source | split: "/" | last }}{% endcapture %}
-  {% capture bas_path %}http://apple2ts.com#{{ site.url }}/programs/{{ source_name | split: "." | first }}.bas{% endcapture %}
+  {% capture source_code %}{% include {{page.source}} %}{% endcapture %}
+  {% capture bas_path %}http://apple2ts.com?basic={{ source_code | replace: '
+', '
+
+' | url_encode }}{% endcapture %}
   {% capture code_section %}## Program
 ```
-{% include {{page.source}} %}
+{{ source_code | replace: '
+', '
+
+' }}
 ```
 
 <a href="{{ bas_path }}" target="_blank" rel="noopener noreferrer">Try me!</a>{% endcapture %}
