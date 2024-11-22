@@ -2,7 +2,7 @@
 layout: post
 title: Random Plasma
 description: Random dithered sine waves
-tags: program one-liner 1mhz-slow
+tags: program one-liner 1mhz-slow monochrome
 date: 2019-01-15
 author: Lee Fastenau
 screenshot: /media/random-plasma.png

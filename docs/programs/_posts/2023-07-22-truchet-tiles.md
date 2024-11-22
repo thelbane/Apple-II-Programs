@@ -2,7 +2,7 @@
 layout: post
 title: Truchet Tiles
 description: Crazy mazy looking thing-a-ma-bob
-tags: program one-liner 1mhz-slow
+tags: program one-liner 1mhz-slow mono
 date: 2023-07-22
 author: Lee Fastenau
 screenshot: /media/truchet-tiles.png

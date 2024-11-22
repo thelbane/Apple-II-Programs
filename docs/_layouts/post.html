@@ -16,7 +16,10 @@ layout: default
 
 {% if page.source %}
   {% capture source_code %}{% include {{page.source}} %}{% endcapture %}
-  {% capture bas_path %}http://apple2ts.com?{% if page.tags contains "1mhz-slow" %}speed=warp&{% endif %}basic={{ source_code | url_encode }}{% endcapture %}
+  {% capture bas_path %}http://apple2ts.com?{% if page.tags contains "1mhz-slow" %}speed=warp&{% endif %}{% if page.tags contains "monochrome" %}color=green&{% endif %}basic={{ source_code | replace: '
+', '
+
+' | url_encode }}{% endcapture %}
   {% capture code_section %}## Program
 ```
 {{ source_code | replace: '

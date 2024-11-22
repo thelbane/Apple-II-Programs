@@ -2,7 +2,7 @@
 layout: post
 title: Floyd-Steinberg Plasma
 description: F-S dithered sine waves
-tags: program one-liner 1mhz-slow
+tags: program one-liner 1mhz-slow monochrome
 date: 2019-01-16
 author: Lee Fastenau
 screenshot: /media/floyd-steinberg-plasma.jpg
