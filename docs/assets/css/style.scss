@@ -109,7 +109,8 @@ header, footer {
   }
 }
 
-.card-layout {
+ul.card-layout {
+  list-style-type: none;
   margin: 2rem 0;
   display: flex;
   justify-content: flex-start;
@@ -293,12 +294,11 @@ figure {
   }
 }
 
-.tryme {
-  background: url("../images/try-me.png");
-  background-size: 100%;
-  width: 3rem;
-  height: 3rem;
-  display: block;
+a.tryme {
+  background: transparent url("../images/try-me.png") no-repeat right;
+  background-size: 3em;
+  display: inline-block;
+  padding: 1em 3em 1em 0;
 }
 
 
