@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Heard, Chef
-date: 2025-03-21 10:30:00
+date: 2025-03-21 10:30:00 -0700
 tags: updates
 author: Lee Fastenau
 ---
