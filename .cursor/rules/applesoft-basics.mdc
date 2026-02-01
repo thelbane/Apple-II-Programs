@@ -1,0 +1,24 @@
+---
+description: Applesoft BASIC language facts and conventions
+globs: 
+alwaysApply: true
+---
+
+# Applesoft BASIC Facts
+
+Quick reference for Applesoft behavior to avoid common mistakes.
+
+## Boolean Expressions
+
+- **True = 1**, False = 0 (not -1 like some other BASICs)
+- Example: `X = (A = B)` sets X to 1 if A equals B, 0 otherwise
+
+## Common Memory Locations
+
+- **POKE 184**: Program counter (low byte). Used for conditional branching within a line.
+- **POKE 50**: Text mode. 255 = normal, 63 = inverse.
+
+## Variable Defaults
+
+- Uninitialized numeric variables default to 0
+- Uninitialized string variables default to empty string ""

@@ -4,13 +4,13 @@ title: Deconstructing the Fifteen Puzzle
 tags: updates
 author: Lee Fastenau
 ---
-A while back, someone on the [Apple II subreddit](https://www.reddit.com/r/apple2/comments/1qsi4f2/comment/o2vrffy/) asked me to break down how the [Fifteen Puzzle](/programs/2024/04/13/fifteen-puzzle.html) two-liner works. I thought it might make for a fun blog post, so here we go.
+About a minute ago, someone on the [Apple II subreddit](https://www.reddit.com/r/apple2/comments/1qsi4f2/comment/o2vrffy/) noted how hard the [Fifteen Puzzle](/programs/2024/04/13/fifteen-puzzle.html) two-liner is to understand. I offered to break it down. I was planning to do some chores around the house anyway, and this sounded way more interesting. So here we go.
 
 <!--more-->
 
 ## The Code
 
-First, let's look at the code in its original, compressed glory:
+First, let's look at the code in its original, obfuscated glory:
 
 {% capture source_code -%}
 0POKE184,21+(Z=0)*84:POKE50,63+192*(N=P):R%=N/4:HTAB3*(N-R%*4)+1:VTAB2*R%+1:A$=STR$(T(N))+"   ":?MID$(A$,1+(N=P)*2,2):RETURN:Z=1:HOME:DIMT(16):FORN=0TO15:T(N)=N:NEXT:N=INT(RND(1)*14)+1:T(N)=N+1:T(N+1)=N:FORN=0TO15:GOSUB0:NEXT
@@ -19,19 +19,17 @@ First, let's look at the code in its original, compressed glory:
 
 Yeah. That's... a lot to take in. Let's break it down piece by piece.
 
-## The Secret Sauce: POKE 184
+## The POKE 184 Trick
 
-Before we dive in, I need to explain the most important trick in this program: `POKE 184`. This is the "goto in disguise" that makes two-liners possible.
+Before we dive in, I should explain one of the more cryptic tricks in this program: `POKE 184`. There are lots of little optimizations that go into writing these one- and two-liners, but this one deserves a callout since it looks like complete nonsense if you've never seen it before. I learned this trick from Sellam in the Apple II Enthusiasts Facebook group.
 
-Memory location 184 holds the position within the current line where Applesoft will continue executing. By POKEing a new value here, we can skip forward (or backward!) within the same line. It's like a conditional GOTO, but without wasting precious characters on an actual GOTO statement.
-
-You'll see this pattern throughout:
+Memory location 184 is the Applesoft program counter. By POKEing a new value here, we can reposition where Applesoft continues executing. It's like a conditional GOTO, but more compact. The pattern looks like this:
 
 ```
-POKE184,value1+(condition)*offset
+POKE184,value+(condition)*offset
 ```
 
-When the condition is true (equals -1 in Applesoft), it adds the offset. When false (equals 0), it doesn't. This lets us branch within a single line.
+When the condition is true (1 in Applesoft), it adds the offset. When false (0), it doesn't. This lets us branch without adding more lines of code.
 
 ## Line 0: Setup and Display Subroutine
 
@@ -46,7 +44,7 @@ Wait, how does that work? When the program runs, we need to skip past the subrou
 POKE184,21+(Z=0)*84
 ```
 
-On the first run, `Z` is 0 (uninitialized variables default to zero), so `(Z=0)` is true (-1), and we add 84 to position 21, jumping us to position 105 in the line—right after the RETURN where `Z=1` waits for us. After that first run, `Z=1`, so subsequent GOSUBs execute the subroutine normally.
+On the first run, `Z` is 0 (uninitialized variables default to zero), so `(Z=0)` is true (1), and we add 84 to position 21, jumping us to position 105 in the line, right after the RETURN where `Z=1` waits for us. After that first run, `Z=1`, so subsequent GOSUBs execute the subroutine normally.
 
 ### The Tile Drawing Subroutine
 
@@ -54,7 +52,7 @@ On the first run, `Z` is 0 (uninitialized variables default to zero), so `(Z=0)`
 POKE50,63+192*(N=P)
 ```
 
-This toggles between normal and inverse text mode. `POKE 50,63` is normal; `POKE 50,255` is inverse. When `N=P` (we're drawing the empty tile position), we get inverse mode—which shows up as a solid block.
+This toggles between normal and inverse text mode. `POKE 50,255` is normal; `POKE 50,63` is inverse. When `N=P` (we're drawing the empty tile position), we use normal mode to print spaces. Tiles are drawn in inverse. We use this POKE trick instead of a conditional statement to avoid adding more lines of code.
 
 ```
 R%=N/4
@@ -72,7 +70,7 @@ Position the cursor. `N-R%*4` gives us the column (0-3). We multiply by 3 for sp
 A$=STR$(T(N))+"   ":?MID$(A$,1+(N=P)*2,2)
 ```
 
-Convert the tile value to a string, pad it with spaces, then print exactly 2 characters. The `1+(N=P)*2` offset is clever: normally we start at position 1, but for the empty tile (`N=P`), we start at position 3—which grabs two spaces instead of the number.
+Convert the tile value to a string, pad it with spaces, then print exactly 2 characters. The `1+(N=P)*2` offset is clever: normally we start at position 1, but for the empty tile (`N=P`), we start at position 3, which grabs two spaces instead of the number.
 
 ```
 RETURN
@@ -100,7 +98,7 @@ Initialize tiles. T(0)=0, T(1)=1, etc.
 N=INT(RND(1)*14)+1:T(N)=N+1:T(N+1)=N
 ```
 
-Here's a subtle but important detail: not all tile arrangements are solvable. Rather than doing a proper shuffle (which would require checking solvability), we just swap two adjacent tiles. This guarantees the puzzle is exactly one swap away from being solved... but you can't just undo that one swap directly. You'll have to work for it.
+Here's a subtle but important detail: not all tile arrangements are solvable. Rather than doing a proper shuffle (which would require checking solvability), we just swap two adjacent tiles. This guarantees the puzzle is exactly one swap away from being solved, but you can't just undo that one swap directly. You'll have to work for it.
 
 ```
 FORN=0TO15:GOSUB0:NEXT
@@ -118,7 +116,7 @@ Line 1 handles win detection, input processing, and tile movement.
 FORT=0TO14:POKE184,216+(T(T)<>T+1)*4:NEXT:END
 ```
 
-For each of the first 15 positions (0-14), check if the tile matches its solved value (position+1). If any tile is wrong, `T(T)<>T+1` is true, and we POKE forward 4 characters—just enough to skip past `END` and continue the game loop. If all tiles are correct, we fall through to END and the program stops. Victory!
+For each of the first 15 positions (0-14), check if the tile matches its solved value (position+1). If any tile is wrong, `T(T)<>T+1` is true, and we POKE forward 4 characters, just enough to skip past `END` and continue the game loop. If all tiles are correct, we fall through to END and the program stops. Victory!
 
 ### Input Processing
 
@@ -188,11 +186,11 @@ Loop forever (or until you win).
 
 ## Wrapping Up
 
-So there you have it—a fully functional sliding puzzle in two lines of Applesoft BASIC. The key tricks are:
+So there you have it, a fully functional sliding puzzle in two lines of Applesoft BASIC. Some of the tricks I used:
 
-1. **POKE 184** for conditional branching within a line
+1. **POKE 184** for conditional branching without adding lines
 2. **Subroutine-before-RETURN** pattern to pack more logic into line 0
 3. **Boolean expressions as multipliers** for compact conditionals
 4. **Clever math** for bounds checking and input decoding
 
-Is it readable? Absolutely not. Is it fun to figure out? I think so. These two-liner challenges are like little puzzles themselves—which feels appropriate for a puzzle game.
+Is it readable? Absolutely not. Did I get everything right in this writeup? Maybe not! If you spot an error or have questions, feel free to [open an issue on GitHub](https://github.com/thelbane/Apple-II-Programs/issues). I'm always happy to chat about this stuff.
