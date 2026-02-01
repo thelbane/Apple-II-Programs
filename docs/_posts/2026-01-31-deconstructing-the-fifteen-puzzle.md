@@ -3,6 +3,7 @@ layout: post
 title: Deconstructing the Fifteen Puzzle
 tags: updates
 author: Lee Fastenau
+excerpt: About a minute ago, someone on the Apple II subreddit noted how hard the Fifteen Puzzle two-liner is to understand. I offered to break it down. I was planning to do some chores around the house anyway, and this sounded way more interesting. So here we go.
 ---
 About a minute ago, someone on the [Apple II subreddit](https://www.reddit.com/r/apple2/comments/1qsi4f2/comment/o2vrffy/) noted how hard the [Fifteen Puzzle](/programs/2024/04/13/fifteen-puzzle.html) two-liner is to understand. I offered to break it down. I was planning to do some chores around the house anyway, and this sounded way more interesting. So here we go.
 
