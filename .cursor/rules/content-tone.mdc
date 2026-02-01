@@ -1,0 +1,36 @@
+---
+description: Writing tone and style for site content (blog posts, program descriptions)
+globs: docs/**/*.md
+alwaysApply: false
+---
+
+# Content Tone & Style
+
+When writing content for this Apple II Programs site, follow these guidelines:
+
+## Voice
+
+- **First person**: Use "I" throughout
+- **Casual and conversational**: Write like you're talking to a fellow enthusiast
+- **Self-deprecating humor**: Don't take yourself too seriously ("like fourteen people who really digs this retro stuff")
+- **Playful**: Have fun with it ("8-bit portal to the spectral plane", version names like "aka 'It works!'")
+
+## Technical Writing
+
+- **Accessible but not dumbed down**: Explain complex concepts clearly, but trust the reader's intelligence
+- **Show your work**: When breaking down code, walk through the logic step by step
+- **Acknowledge the hacky nature**: These are one/two-liners; embrace the cleverness and weirdness
+
+## Emotional Notes
+
+- **Nostalgic but not saccharine**: Reference the magic of early computing without overdoing it
+- **Genuine enthusiasm**: Let your passion for Apple II programming show through
+- **Humble**: You're sharing, not lecturing
+
+## Examples
+
+❌ "This algorithm optimizes tile position calculation."
+✅ "Here's where things get a little weird..."
+
+❌ "The program implements a standard sliding puzzle mechanic."
+✅ "Controls are I, J, K, and L (all CAPS) to slide tiles up, left, down, and right, respectively."
