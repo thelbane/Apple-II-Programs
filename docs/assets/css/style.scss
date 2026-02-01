@@ -71,6 +71,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 .5em 0;
 }
 
+h3 {
+  margin-bottom: 1em;
+}
+
 h1, h2, h3 {
     text-transform: uppercase;
 }
@@ -112,9 +116,15 @@ header, footer {
 ul.card-layout {
   list-style-type: none;
   margin: 2rem 0;
+  padding: 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+
+  li {
+    line-height: normal;
+    margin-bottom: 0;
+  }
 }
 
 .card {
@@ -164,6 +174,7 @@ ul.card-layout {
       text-overflow: ellipsis;
       color: black;
       font-size: 1rem;
+      line-height: 1.1;
       height: 2rem;
       overflow: hidden;
     }  
@@ -199,6 +210,23 @@ ul {
   list-style-position: outside;
   margin-bottom: 1rem;
   margin-left: 2rem;
+
+  li {
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+
+  li {
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
 }
 
 b, strong {

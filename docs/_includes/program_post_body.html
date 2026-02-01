@@ -12,7 +12,8 @@
         alt="{{ include.post.title }}" />
     {% endif %}
 
-    {{ include.post.excerpt }}<br><br>
+    {{ include.post.excerpt | markdownify }}
+    <br>
     <a href="{{ include.post.url | relative_url }}">read full story</a>
   </a>
 </div>
